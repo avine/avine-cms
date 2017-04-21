@@ -1,0 +1,17 @@
+#######################
+# Merchant parameters #
+#######################
+
+# Merchant logo (top left of the payment pages)
+LOGO!merchant.gif!
+
+# URL of the autoresponse
+AUTO_RESPONSE_URL!!
+
+# URL of the return (payment failure)
+CANCEL_URL!!
+
+# URL of the return (payment success)
+RETURN_URL!!
+
+# end of file

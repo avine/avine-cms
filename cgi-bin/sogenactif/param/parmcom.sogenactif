@@ -1,0 +1,50 @@
+#########################
+# Sogenactif parameters #
+#########################
+
+# Logo of the Societe Generale
+ADVERT!sg.gif!
+
+
+
+
+# Background color
+BGCOLOR!ffffff!
+
+# Payment blocks alignment
+BLOCK_ALIGN!center!
+
+# Payment blocks order
+BLOCK_ORDER!1,2,3,4,5,6,7,8!
+
+# Security mode
+CONDITION!SSL!
+
+# Currency code  (978=EURO)
+CURRENCY!978!
+
+# Payment blocks flag
+HEADER_FLAG!yes!
+
+# Shopper language (fr=francais)
+LANGUAGE!fr!
+
+# Logo banck (right of the payment pages)
+LOGO2!sogenactif.gif!
+
+# Merchant country code
+MERCHANT_COUNTRY!fr!
+
+# Merchant language
+MERCHANT_LANGUAGE!fr!
+
+# Available payments methods
+PAYMENT_MEANS!CB,2,VISA,2,MASTERCARD,2!
+
+# Remove frames
+TARGET!_top!
+
+# Text color
+TEXTCOLOR!000000!
+
+# end of file

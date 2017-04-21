@@ -1,0 +1,7 @@
+api elysnet_p600_PLUGIN_linux-2.6.9.tar créée le 07/07/05 à 11:31:53
+
+type d'api = PLUGIN
+offre = CCF
+OS = linux 2.6.9
+version = p600
+processeur = i686

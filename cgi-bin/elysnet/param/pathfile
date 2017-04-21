@@ -1,0 +1,16 @@
+# Debug mode (YES / NO)
+DEBUG!NO!
+
+# Logos directory (relative web path)
+D_LOGO!{WEBSITE_PATH}/components/com_sips/logo/!
+
+# Bank parameters (full path on the server) UNIX LIMITATION : 76 characters
+F_DEFAULT!{DOCUMENT_ROOT}{WEBSITE_PATH}/cgi-bin/elysnet/param/parmcom.elysnet!
+
+# Merchant parameters (full path on the server)
+F_PARAM!{DOCUMENT_ROOT}{WEBSITE_PATH}/cgi-bin/elysnet/param/parmcom!
+
+# Merchant parameters (full path on the server)
+F_CERTIFICATE!{DOCUMENT_ROOT}{WEBSITE_PATH}/cgi-bin/elysnet/param/certif!
+
+# end of file
