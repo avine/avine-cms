@@ -1,0 +1,108 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/*
+ * Online box without icon :	<p class="box"><span class="box-TYPE">ONLINE CONTENT HERE</span></p>
+ * Online box with icon :		<p class="box"><span class="box-TYPE"><span class="icon">ONLINE CONTENT HERE</span></span></p>
+ *
+ * Block box without icon :		<div class="box-TYPE">BLOCK CONTENT HERE</div>
+ * Block box with icon :		<div class="box-TYPE"><div class="icon">BLOCK CONTENT HERE</div></div>
+ */
+
+p.box {
+	padding: 0.5em 0;
+}
+
+.box-error,
+.box-ok,
+.box-warning,
+.box-info,
+.box-help,
+.box-tips,
+.box-missing {
+	margin: 1.50em 0; /* same as <p> */
+	padding: 0.5em 1em;
+	text-align: justify;
+	font-size: 108.33%; /* 13px */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+	/* Html 5 */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+
+	/* Html 5 */
+	-moz-box-shadow: 1px 1px 3px #DDD;
+	-webkit-box-shadow: 1px 1px 3px #DDD;
+	box-shadow: 1px 1px 3px #DDD;
+}
+
+.box-error		{ border: 1px solid #D0583F; }
+.box-ok			{ border: 1px solid #559726; }
+.box-warning	{ border: 1px solid #D1A82C; }
+.box-info		{ border: 1px solid #6187B3; }
+.box-help		{ border: 1px solid #6187B3; }
+.box-tips		{ border: 1px solid #666666; }
+.box-missing	{ border: 1px solid #E2E2E2; }
+
+
+.box-error		{ background: url(images/box-red.gif	) repeat-x bottom #FDFDFD; }
+.box-ok			{ background: url(images/box-green.gif	) repeat-x bottom #FDFDFD; }
+.box-warning	{ background: url(images/box-yellow.gif	) repeat-x bottom #FDFDFD; }
+.box-info		{ background: url(images/box-blue.gif	) repeat-x bottom #FDFDFD; }
+.box-help		{ background: url(images/box-blue.gif	) repeat-x bottom #FDFDFD; }
+.box-tips		{ background: url(images/box-grey.gif	) repeat-x bottom #FDFDFD; }
+.box-missing	{  }
+
+
+
+.box-error	, .box-error p		{ color: #D0583F; }
+.box-ok		, .box-ok p			{ color: #559726; }
+.box-warning, .box-warning p	{ color: #D1A82C; }
+.box-info	, .box-info p		{ color: #6187B3; }
+.box-help	, .box-help p		{ color: #6187B3; }
+.box-tips	, .box-tips p		{ color: #666666; }
+.box-missing, .box-missing p	{  }
+
+
+
+.box-error .icon,
+.box-ok .icon,
+.box-warning .icon,
+.box-info .icon,
+.box-help .icon,
+.box-tips .icon,
+.box-missing .icon {
+	/*padding: 1px 0; /* Might be necessary for Safari on Mac */
+	padding-left: 24px;
+}
+
+.box-error .icon 	{ background: url(images/box-icon-error.png		) no-repeat 0 0 transparent; }
+.box-ok .icon 		{ background: url(images/box-icon-ok.png		) no-repeat 0 0 transparent; }
+.box-warning .icon 	{ background: url(images/box-icon-warning.png	) no-repeat 0 0 transparent; }
+.box-info .icon 	{ background: url(images/box-icon-info.png		) no-repeat 0 0 transparent; }
+.box-help .icon 	{ background: url(images/box-icon-help.png		) no-repeat 0 0 transparent; }
+.box-tips .icon 	{ background: url(images/box-icon-tips.png		) no-repeat 0 0 transparent; }
+.box-missing .icon 	{ background: url(images/box-icon-missing.png	) no-repeat 0 0 transparent; }
+
+
+
+.box-error hr,
+.box-ok hr,
+.box-warning hr,
+.box-info hr,
+.box-help hr,
+.box-tips hr,
+.box-missing hr {
+	margin: 0.5em 0;
+	border: none;
+	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #FFF;
+}
+
+p.box-title { /* used by boxManager::multiMessage() method */
+	font-size: 115.38%; /* 15px */
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+}

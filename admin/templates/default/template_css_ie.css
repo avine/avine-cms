@@ -1,0 +1,27 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/* 
+ * IE dont work well with the fieldset background. Here the replacment for him !
+ */
+
+.admin_fieldsets-wrapper,
+.admin_fieldset {
+	padding-top: 22px;
+	margin-bottom: 22px;
+	position: relative;
+}
+.admin_fieldsets-wrapper legend {
+	position: absolute;
+	top: -0.9em;
+}
+.admin_fieldset legend {
+	position: absolute;
+	top: -0.6em;
+}
+
+
+
+#admin_welcome {
+	height: 270px; /* interpreted as min-height in ie6 */
+}

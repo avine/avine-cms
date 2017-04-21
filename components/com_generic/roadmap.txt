@@ -1,0 +1,89 @@
+
+UPGRADE DE COM_GENERIC
+======================
+
+Supprimer
+---------
+
+> dans les tables :
+
+last_node_element
+
+-------------------------------
+
+> la propriété :
+
+$this->config_last_node_element
+
+$this->last_level
+
+-------------------------------
+
+> La méthode :
+
+getLastNodeElement()
+
+getLastLevel()
+
+-------------------------------
+
+> La variable dans admin :
+
+global	$node_with_elements;
+
+-------------------------------
+
+> La constante :
+
+LANG_ADMIN_COM_GENERIC_NODE_ELEMENT_FIELDSET_RELOAD
+
+-------------------------------
+
+> Toujours vérifier qu'on explode pas : $this->config_com_nodes_name ; puisqu'il est maintenant unique !
+
+getComNodesName()
+
+$com_nodes_name
+
+-------------------------------
+
+> dans : nodeSpecificController_customize( &$node_details, $navig, $node_level_name )
+
+le paramètre $node_level_name ne sert à rien maintenant !
+
+-------------------------------
+
+Supprimer dans getNodes() et getNodesOptions() :
+
+$level_min, $level_max, ...
+et voir précisement ce qui se passe avec $path_full
+
+-------------------------------
+
+Plus généralement, virer :
+
+div-sep
+
+-------------------------------
+
+Dans *_config :
+
+> Déplacer :
+home_per_row
+home_wrapper
+
+> Supprimer :
+home_header
+home_footer
+
+
+--------------------------------------------
+
+Supprimier la table (remplacée par home_nde et home_elm) :
+
+home
+
+--------------------------------------------
+
+
+

@@ -1,0 +1,223 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+
+p.comDonate_info {
+	background: url('images/box-icon-info.png') no-repeat 0 2px;
+	padding-left: 22px;
+	color: #777;
+	font-size: 91.67%;
+	font-style: italic;
+}
+
+
+
+/**
+ * Login link
+ */
+
+div.comDonate_login_request {
+	float: right;
+	padding-right: 42px;
+	background: url(images/login-request.png) no-repeat right center;
+	text-align: right;
+}
+
+br.comDonate_login_request {
+	clear: right;
+}
+
+
+
+/**
+ * tmpl_form_donate.html
+ */
+
+.comDonate_form {
+	border-collapse: collapse;
+	width: 99%;
+	margin-bottom: 10px;
+}
+
+.comDonate_form td {
+	padding: 0 !important;
+	border-bottom: 1px dotted #AAA;
+}
+
+.comDonate_form_designation {
+	vertical-align: top;
+}
+
+.comDonate_form_designation h3 {
+	margin: 5px 0 !important;
+	font-size: 1.17em;
+}
+
+.comDonate_form_designation h3 legend {
+	
+}
+
+.comDonate_form_designation p {
+	margin: 0 !important;
+	padding: 0 15px 10px 4px;
+}
+
+.comDonate_form_designation img {
+	float: left;
+	margin: 5px 10px 10px 0;
+}
+
+.comDonate_form_designation_br {
+	clear: left;
+}
+
+.comDonate_form_amount {
+	width: 150px;
+	vertical-align: middle;
+	text-align: right;
+	color: #999;
+	background-color: #FAFAFA;
+}
+
+.comDonate_form_amount input {
+	text-align: center;
+	font-weight: bold;
+	color: #111;
+	border-width: 2px;
+	padding: 5px 0;
+}
+
+.comDonate_form_amount input:hover,
+.comDonate_form_amount input:active,
+.comDonate_form_amount input:focus {
+	border-width: 2px;
+}
+
+
+
+.comDonate_form_donor_reciept {
+	padding-left: 20px;
+}
+
+
+
+/**
+ * tmpl_form_donor.html
+ */
+
+.comDonate_form_donor {
+	
+}
+
+.comDonate_form_donor label {
+	clear: left;
+	float: left;
+	width: 150px;
+	position: relative;
+	top: 4px;
+	text-align: right;
+	position: relative;
+	top: 1px;
+}
+
+.comDonate_form_donor_choice {
+	font-weight: bold;
+	font-size: 1.17em; /* 12px => 14px */
+}
+.comDonate_form_donor_choice span {
+	font-weight: normal;
+	font-size: 0.86em; /* 14px => 12px */
+	color: #888;
+	position: relative;
+	display: block;
+	padding-left: 25px;
+}
+.comDonate_form_donor_choice label {
+	float: none;
+	width: auto;
+	position: relative;
+	top: auto;
+}
+
+.comDonate_js_highlight {
+	color: #4E83B5 !important; /* Alternative in red: #A0522D */
+}
+
+
+
+/**
+ * Summary
+ */
+
+#comDonate_donorHtml span {
+	color: #999;
+}
+
+#comDonate_donate_summary h4 {
+	margin-bottom: 10px !important;
+}
+
+#comDonate_summary input {
+	font-size: 83.33%;
+}
+
+#comDonate_summary #checkout-button {
+	margin: 25px 0;
+	font-size: 150%;
+	text-align: center;
+}
+#comDonate_summary #checkout-button a {
+	padding: 4px 13px 4px 42px;
+	background: url(images/checkout-button.png) no-repeat left center;
+	text-decoration: none !important;
+}
+#comDonate_summary #checkout-button a:hover,
+#comDonate_summary #checkout-button a:focus {
+	box-shadow: 0px 0px 2px #888;
+	border-radius: 40px;
+	background-color: #375d81;
+	color: #f3f3f3;
+	text-shadow: 0 1px 0 #183152;
+}
+
+
+
+/**
+ * Forms Errors
+ */
+
+#comDonate_form-error {
+	border: 1px solid #F7D2D2;
+	background-color: #FEF5F5;
+
+	width: 300px;
+	margin: 0 auto 20px auto;
+	padding: 1px;
+}
+#comDonate_form-error div {
+	border: 1px solid #F7D2D2;
+	background-color: #DD5757;
+	color: #FEF5F5;
+	font-weight: bold;
+	text-align: center;
+
+	margin: 0 0 5px 0 !important;
+	padding: 1px 2px;
+}
+#comDonate_form-error p {
+	color: #DD5757;
+
+	margin: 0 5px 5px 5px !important;
+	padding: 2px 4px;
+	border-bottom: 1px solid #F7D2D2;
+}
+
+
+
+/**
+ * Invoice links
+ */
+
+.comDonate_invoice-links {
+	line-height: 22px;
+}

@@ -1,0 +1,19 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/*
+ * jQuery : Emulate target="_blank"
+ *
+ * Apply js : <a href="http://www.mysite.com" class="external"></a>
+ * Disable css : <a href="http://www.mysite.com" class="external no-arrow"></a>
+ */
+
+.external {
+	padding-right: 12px;
+	background: url(images/external-link.gif) no-repeat right top;
+}
+
+.external.no-arrow {
+	padding-right: 0;
+	background-image: none;
+}

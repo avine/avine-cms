@@ -1,0 +1,117 @@
+
+<!-- Handle the radio buttons to slideUp/slideDown the receipt-form -->
+<script type="text/javascript">
+$(document).ready(function(){
+	// Init radio behaviour
+	if ($("input[id='donate_form_radio_anonymous']").is(":checked")){
+		$(".comDonate_js_slide").hide();
+		$("span#opt_radio_anonymous_tips").addClass("comDonate_js_highlight");
+	} else {
+		$("span#opt_radio_receipt_tips").addClass("comDonate_js_highlight");
+	}
+	// On change
+	$("input[name='opt_radio']").change(function(){
+		if ($("input[id='donate_form_radio_anonymous']:checked").val()){
+			$(".comDonate_js_slide").slideUp();
+			// Highlight tips behaviour
+			$("span#opt_radio_receipt_tips").removeClass("comDonate_js_highlight");
+			$("span#opt_radio_anonymous_tips").addClass("comDonate_js_highlight");
+			// Uncheck the registration checkbox
+			$("#donate_form_opt_registration").attr('checked', false);
+			$("span#opt_registration_tips").removeClass("comDonate_js_highlight");
+		} else {
+			$(".comDonate_js_slide").slideDown();
+			// Highlight tips behaviour
+			$("span#opt_radio_anonymous_tips").removeClass("comDonate_js_highlight");
+			$("span#opt_radio_receipt_tips").addClass("comDonate_js_highlight");
+		}
+		$(this).blur();
+	});
+
+	// Init checkbox behaviour
+	if ($("input[id='donate_form_opt_registration']").is(":checked")){
+		$("span#opt_registration_tips").addClass("comDonate_js_highlight");
+	}
+	// On change
+	$("input[name='opt_registration']").change(function(){
+		if ($("input[id='donate_form_opt_registration']:checked").val()){
+			$("span#opt_registration_tips").addClass("comDonate_js_highlight");
+		} else {
+			$("span#opt_registration_tips").removeClass("comDonate_js_highlight");
+		}
+	});
+});
+</script>
+
+<!-- {opt_radio_anonymous} -->
+<p class="comDonate_form_donor_choice">{opt_radio_anonymous}<br /><span id="opt_radio_anonymous_tips">{opt_radio_anonymous_tips}</span></p>
+<hr />
+<!-- {opt_radio_anonymous} -->
+
+<div class="comDonate_form_donor">
+	<!-- {opt_radio_receipt} -->
+	<p class="comDonate_form_donor_choice">{opt_radio_receipt}<br /><span id="opt_radio_receipt_tips">{opt_radio_receipt_tips}</span></p>
+	<!-- {opt_radio_receipt} -->
+
+	<div class="comDonate_js_slide">
+		<!-- block_adress[OR] -->
+		<p>
+			<!-- {gender} -->{gender_alias}{gender}<br /><!-- {gender} -->
+			<!-- {age} -->{age_alias}{age}<br /><!-- {age} -->
+	
+			<!-- {last_name} -->{last_name_alias}{last_name}<br /><!-- {last_name} -->
+			<!-- {first_name} -->{first_name_alias}{first_name}<br /><!-- {first_name} -->
+	
+			<!-- {title} -->{title_alias}{title}<br /><!-- {title} -->
+			<!-- {company} -->{company_alias}{company}<br /><!-- {company} -->
+	
+			<!-- {adress_1} -->{adress_1_alias}{adress_1}<br /><!-- {adress_1} -->
+			<!-- {adress_2} -->{adress_2_alias}{adress_2}<br /><!-- {adress_2} -->
+			<!-- {city} -->{city_alias}{city}<br /><!-- {city} -->
+			<!-- {state} -->{state_alias}{state}<br /><!-- {state} -->
+			<!-- {country} -->{country_alias}{country}<br /><!-- {country} -->
+			<!-- {zip} -->{zip_alias}{zip}<br /><!-- {zip} -->
+	
+			<!-- {phone_1} -->{phone_1_alias}{phone_1}<br /><!-- {phone_1} -->
+			<!-- {phone_2} -->{phone_2_alias}{phone_2}<br /><!-- {phone_2} -->
+			<!-- {fax} -->{fax_alias}{fax}<br /><!-- {fax} -->
+		</p>
+		<!-- block_adress[OR] -->
+		<!-- block_extras[OR] -->
+		<p>
+			<!-- {extra_field_1} -->{extra_field_1_alias}{extra_field_1}<br /><!-- {extra_field_1} -->
+			<!-- {extra_field_2} -->{extra_field_2_alias}{extra_field_2}<br /><!-- {extra_field_2} -->
+			<!-- {extra_field_3} -->{extra_field_3_alias}{extra_field_3}<br /><!-- {extra_field_3} -->
+			<!-- {extra_field_4} -->{extra_field_4_alias}{extra_field_4}<br /><!-- {extra_field_4} -->
+			<!-- {extra_field_5} -->{extra_field_5_alias}{extra_field_5}<br /><!-- {extra_field_5} -->
+		</p>
+		<!-- block_extras[OR] -->
+	</div>
+</div>
+
+<!-- block_registration[OR] -->
+<div class="comDonate_js_slide">
+	<hr />
+	<div class="comDonate_form_donor">
+		<p class="comDonate_form_donor_choice">{opt_registration}<br /><span id="opt_registration_tips">{opt_registration_tips}</span></p>
+		<p><!-- username_password[OR] -->{opt_registration_username}<br />{opt_registration_password}<br /><!-- username_password[OR] -->{opt_registration_email}</p>
+	</div>
+</div>
+<!-- block_registration[OR] -->
+
+<!-- {captcha_alias} -->
+<div class="comDonate_js_slide">
+	<hr />
+	{captcha_alias} {captcha}
+</div>
+<!-- {captcha_alias} -->
+
+<!-- {opt_registration_completed} --><p><i>{opt_registration_completed}</i></p><!-- {opt_registration_completed} -->
+
+<!-- {opt_update_user_account} --><p>{opt_update_user_account}</p><!-- {opt_update_user_account} -->
+
+<!-- {required_field_tips} -->
+<div class="comDonate_js_slide">
+	<div class="comUser_form-tips">{required_field_tips}</div>
+</div>
+<!-- {required_field_tips} -->

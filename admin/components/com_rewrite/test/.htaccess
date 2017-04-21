@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+Options +Indexes
+RewriteEngine On
+RewriteBase avine/admin/components/com_rewrite/test/
+
+RewriteRule ^test.html$ test.php [L]
+</IfModule>
+

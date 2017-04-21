@@ -1,0 +1,35 @@
+
+<!-- jsManager::formDialog -->
+<script type="text/javascript">
+$(document).ready(function(){
+	// Dialog
+	$("#formDialog-dialog").dialog({
+		autoOpen: false,
+		width: {rpl_width},
+		height: {rpl_height},
+		modal: true,
+		buttons: {
+			"{rpl_close}": function() {
+				$(this).dialog("close");
+			}
+		}
+	});
+
+	// Opener
+	$("#formDialog-opener").show().css("cursor", "pointer").click(function() {
+		$("#formDialog-dialog").dialog("open");
+		return false;
+	});
+
+	// AppendTo before submit form
+	$("form").submit(function() {
+		$("#formDialog-dialog").parent().appendTo($("#formDialog-appendTo")); // Not work in IE6
+	});
+});
+</script>
+
+<div id="formDialog-appendTo"></div>
+<div id="formDialog-opener" class="formDialog-opener" title="{rpl_open}">{rpl_title}</div>
+<div id="formDialog-dialog" title="{rpl_title}">
+	{rpl_form}
+</div>

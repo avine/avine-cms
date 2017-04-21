@@ -1,0 +1,178 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+
+/* Preview */
+
+.medias-manager-document,
+.medias-manager-image,
+.medias-manager-audio,
+.medias-manager-video {
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 2px 0 2px 22px;
+}
+
+.medias-manager-document	{ background-image: url(images/title-document_16.png); }
+.medias-manager-image		{ background-image: url(images/title-image_16.png); }
+.medias-manager-audio		{ background-image: url(images/title-audio_16.png); }
+.medias-manager-video		{ background-image: url(images/title-video_16.png); }
+
+.medias-manager-preview {
+	line-height: 16px;
+	font-size: 91.67%;
+	color: #666;
+}
+
+.medias-manager-preview span {
+	margin-right: 12px; /* space between each element of the preview */
+}
+
+.medias-manager-preview-title {
+	color: #999;
+}
+
+/* Full */
+
+.medias-manager-full .medias-manager-document,
+.medias-manager-full .medias-manager-image,
+.medias-manager-full .medias-manager-audio,
+.medias-manager-full .medias-manager-video {
+	padding: 5px 0 5px 26px;
+}
+
+.medias-manager-full .medias-manager-document	{ background-image: url(images/title-document_22.png); }
+.medias-manager-full .medias-manager-image		{ background-image: url(images/title-image_22.png); }
+.medias-manager-full .medias-manager-audio		{ background-image: url(images/title-audio_22.png); }
+.medias-manager-full .medias-manager-video		{ background-image: url(images/title-video_22.png); }
+
+.medias-manager-full {
+	line-height: 22px;
+}
+
+.medias-manager-full-single {
+	font-weight: bold;
+	font-size: 110%;
+	color: #999;
+	padding-bottom: 3px;
+}
+
+
+.medias-manager-loader {
+	display: block;
+	line-height: 16px;
+	font-size: 91.67%;
+	font-family: Verdana;
+
+	background: url(images/loader.gif) no-repeat left center;
+	padding-left: 24px;
+	color: #BBB;
+}
+
+
+
+.medias-manager-download,
+.medias-manager-download:link,
+.medias-manager-download:visited {
+	float: right;
+	padding: 3px 9px 6px 9px;
+	font-size: 83.33%;
+	line-height: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	color: #1f1f1f;
+
+	/* Html 5 */
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px;
+	/* Html 5 */
+	text-shadow: 0 1px 0 #fff;
+}
+.medias-manager-download:hover,
+.medias-manager-download:active,
+.medias-manager-download:focus {
+	background-color: #eaeaea;
+}
+
+
+
+.medias-manager-lightbox {
+	
+}
+
+
+
+/* The medias preference button is replaced by an image */
+#media_manager_pref_switch {
+	width: 68px;
+	height: 30px;
+
+	text-indent: -5000px;
+	overflow: hidden;
+
+	background: url(images/medias-preference-button.png) left top;
+	cursor: pointer;
+}
+#media_manager_pref_switch:hover,
+#media_manager_pref_switch:focus {
+	background-position: left bottom;
+}
+
+/* The button is handled by jQuery and a <span> is added after the input to display info about the current media preference */
+#media_manager_pref_ {
+	text-align: center;
+	line-height: 100%;
+}
+#media_manager_pref_ span {
+	font-size: 83.33%;
+	color: #1F1F1F;
+}
+
+
+
+/* Handle the Tabs if javascript is disabled */
+
+#medias-tabs .medias-manager-full a {
+	text-decoration: none !important;
+}
+
+.medias-tabs {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+
+
+
+/* Handle the Tabs if javascript is enabled (with jQuery UI) */
+
+#medias-tabs.ui-tabs {
+	border: none;
+	background: none;
+}
+
+#medias-tabs.ui-tabs .ui-tabs-panel,
+#medias-tabs.ui-tabs .ui-tabs-nav li {
+	border-style: solid; border-color: #ccc; /* Panel and Tabs */
+}
+
+#medias-tabs.ui-tabs .ui-tabs-panel {
+	border-top-width: 1px; /* Panel border */
+	padding-top: 1.5em;
+}
+
+#medias-tabs.ui-tabs .ui-tabs-nav li {
+	border-width: 1px; /* Tabs border */
+	margin-right: 6px;
+}
+
+#medias-tabs.ui-tabs .ui-tabs-nav li a {
+	padding: 3px 6px 2px 6px;
+	text-shadow: 0 1px 0 #fff;
+}
+
+#medias-tabs.ui-tabs .ui-tabs-nav {
+	border: none; background: none; /* Remove .ui-widget-header styles */
+}
+
+

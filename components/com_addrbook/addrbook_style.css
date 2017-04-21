@@ -1,0 +1,106 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+#addrbook-book-wrapper {
+	margin-top: 2.5em; /* Space between the filters and the book */
+}
+
+
+
+.addrbook-comment {
+	padding-left: 22px;
+	background: url(images/comment.png) no-repeat 0 3px;
+}
+
+.addrbook-addr {
+	padding-left: 22px;
+	background: url(images/addr.png) no-repeat 0 3px;
+
+}
+
+.addrbook-contact {
+	padding-left: 22px;
+	background: url(images/contact.png) no-repeat 0 3px;
+}
+
+
+
+.addrbook-filter {
+	float: left;
+	margin-right: 15px;
+}
+
+.addrbook-filter-frontend {
+	float: none !important;
+}
+.addrbook-filter-frontend label {
+	float: left;
+	width: 200px;
+}
+.addrbook-filter-frontend select {
+	width: 200px;
+}
+
+.addrbook-filter-frontend #addrbook_search {
+	width: 185px;
+}
+
+.addrbook-filter-clear {
+	clear: left;
+}
+
+
+
+#addrbook-all-filters {
+	border: 1px solid #ccc;
+	background-color: #ededed;
+
+	/* Html 5 */
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#addrbook-all-filters .toggle-title {
+	line-height: 22px;
+	padding: 6px 6px 3px 33px;
+	background: url(images/filters-icon.png) no-repeat 6px 6px;
+}
+
+#addrbook-all-filters .toggle-content {
+	margin-bottom: 6px; /*  same as the border-radius of #addrbook-all-filters */
+	padding: 15px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: url(images/filters-bg.gif) repeat-x top #FAFAFA;
+}
+
+.addrbook-filter-submit {
+	margin-left: 200px;
+	padding-top: 10px;
+}
+
+.addrbook-filter-remove {
+	font-size: 92%;
+}
+
+#addrbook-filters-breadcrumb {
+	padding: 5px 0 0 20px;
+}
+
+
+
+.addrbook-filters-steps {
+	margin-top: 30px;
+	font-size: 92%;
+	text-align: center;
+}
+
+.addrbook-filters-steps input {
+	cursor: pointer;
+}
+
+.addrbook-filters-steps input#addrbook_step_current {
+	border: 1px solid #333 !important;
+	color: #111 !important;
+}

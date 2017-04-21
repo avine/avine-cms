@@ -1,0 +1,185 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/*
+ * Wrapper for : - all subnodes (if exist) - all elements
+ *
+ * Depends of the current component !
+ * [COM_NAME]-wrapper-subnodes	: wrapp subnodes on the same line (if there's more than one per line)
+ * [COM_NAME]-wrapper-elements	: wrapp elements on the same line (if there's more than one per line)
+ */
+
+.generic-wrapper-subnodes {
+ 	
+}
+
+.generic-wrapper-elements {
+ 	
+}
+
+
+
+/*
+ * Wrapper of node-selector and archive-selector
+ */
+
+.generic-selectors {
+	margin-bottom: 1.50em;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #DDD;
+	background: url(images/navigator-bg.gif) no-repeat center bottom;
+}
+
+/* Catch each selector directly with his ID */
+.generic-selectors #node_selector_ {
+	text-align: left;
+}
+
+.generic-selectors #archive_selector_ {
+	text-align: right;
+}
+
+
+
+/*
+ * Pages Navigator
+ */
+
+#generic-navigator {
+	clear: left;
+	margin-bottom: 1.50em;
+	text-align: center;
+}
+
+#generic-navigator a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#generic-navigator a span {
+	color: #AAA;
+	font-weight: normal;
+}
+
+#generic-navigator a#active {
+	font-size: 125%;
+}
+
+#generic-navigator a#start, 	#generic-navigator span#start 	{ padding-left: 18px; background: url(images/navigator-start.png) no-repeat left bottom; }
+#generic-navigator a#back,  	#generic-navigator span#back  	{ padding-left: 18px; background: url(images/navigator-back.png)  no-repeat left bottom; }
+#generic-navigator span#start, 	#generic-navigator span#back 	{ background-position: left top; }
+#generic-navigator a#forward, 	#generic-navigator span#forward { padding-right: 18px; background: url(images/navigator-forward.png) no-repeat right bottom; }
+#generic-navigator a#end,     	#generic-navigator span#end     { padding-right: 18px; background: url(images/navigator-end.png)     no-repeat right bottom; }
+#generic-navigator span#forward,#generic-navigator span#end 	{ background-position: right top; }
+
+
+
+/*
+ * Node
+ */
+
+.generic-node {
+	margin: 0 0.5em 1.5em 0.5em;
+	border: 1px solid #CFDDAC;
+	background-color: #E6EDD1;
+	color: #87A140;
+}
+
+.generic-node h1 {
+	margin: 0;
+	text-align: right;
+}
+
+.generic-node h1 a {
+	display: block;
+	padding: 5px 10px;
+}
+
+.generic-node div.generic-content {
+	padding: 0 10px 10px 10px;
+}
+
+
+/*
+ * Node-navig
+ */
+
+.generic-node-navig {
+	margin: 0 0.5em 1.5em 0.5em;
+	border: 1px solid #CCC;
+	background-color: #FAFAFA;
+	color: #888;
+}
+
+.generic-node-navig h3 {
+	margin: 0;
+	text-align: right;
+}
+
+.generic-node-navig h3 a {
+	display: block;
+	padding: 5px 10px;
+}
+
+.generic-node-navig div.generic-content {
+	padding: 0 10px 10px 10px;
+}
+
+
+
+/*
+ * Element
+ */
+
+.generic-element {
+	margin: 0 0.5em 1.5em 0.5em;
+	border: 1px solid #C0DFF8;
+}
+
+.generic-element h2 {
+	margin: 0;
+	background-color: #EEF5FB;
+
+	/* Html 5 */
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+.generic-element h2 a {
+	display: block;
+	padding: 2px 10px 0 10px;
+	border-bottom: 1px solid #C0DFF8;
+}
+
+.generic-element div.generic-content {
+	padding: 10px;
+}
+
+.generic-element .element-infos {
+	padding: 0 10px 10px 10px;
+	text-align: right;
+}
+
+
+
+.element-infos {
+	font-size: 91.67%;
+	color: #888;
+}
+
+.element-infos span {
+	padding-right: 10px;
+	color: #444;
+}
+
+
+.generic-node,
+.generic-node-navig,
+.generic-element {
+	/* Html 5 */
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+

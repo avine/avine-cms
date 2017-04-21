@@ -1,0 +1,34 @@
+<?php
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+// No direct access
+defined( '_DIRECT_ACCESS' ) or die( 'Restricted access' );
+
+
+// DATABASE ACCESS
+define( 'DB_HOST' 				, '{DB_HOST}' );
+define( 'DB_USER' 				, '{DB_USER}' );
+define( 'DB_PASS' 				, '{DB_PASS}' );
+define( 'DB_NAME' 				, '{DB_NAME}' );
+
+define( 'DB_TABLE_PREFIX' 		, '{DB_TABLE_PREFIX}' ); # All tables prefix_ (ex. : 'avn_')
+
+
+// WEBSITE PATH
+define( 'WEBSITE_PATH'			, '{WEBSITE_PATH}' ); # ex. : '/subdir'
+
+
+// Resources path
+define( 'RESOURCE_PATH'			, '/resource' ); # Relative to WEBSITE_PATH
+
+
+// Time zone
+define('TIME_ZONE'				, '{TIME_ZONE}' ); # To find your time zone see : http://fr2.php.net/manual/en/timezones.php
+
+
+// Output buffering
+define('OUTPUT_BUFFERING'		, true ); # Boolean (for debugging, you can disable this feature)
+
+
+?>

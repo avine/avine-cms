@@ -1,0 +1,1038 @@
+/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.fr). Dual licensed under the MIT and GPL Version 2 licenses. */
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background: url(images/body/brushed_alu_dark.png) repeat #777;
+	background-attachment: fixed;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #2C79B3;
+	outline: none;
+}
+a:hover,
+a:active,
+a:focus {
+	text-decoration: underline;
+}
+
+h1 {							/* Page title - #admin_main_content */
+	margin: 5px 0 12px 0px;
+	font-size: 150%;
+	color: #2C79B3;
+	text-align: center;
+
+	/* Html 5 */
+	text-shadow: 2px 2px 1px #DDD;
+}
+
+h1 img {						/* Associated icon */
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+h1 span {						/* Optional subtitle */
+	font-weight: normal;
+	font-size: 88.88%;
+}
+
+h2 {							/* Tabulator title - div#admin_tabulator */
+	margin: 0px 0 20px 0;
+	font-size: 125%;
+	color: #9DBA4F;
+
+	/* Html 5 */
+	text-shadow: 1px 1px 2px #DDD;
+}
+
+h3 {
+	margin: 3px 0 3px 0;
+	color: #9DBA4F;
+	line-height: 100%;
+	font-size: 116.67%;
+	font-weight: normal;
+}
+
+h3 span {
+	font-style: italic;
+}
+
+h4 {
+	font-size: 91.99%;
+	color: #444;
+	letter-spacing: 0.045em;
+}
+
+h4 span {
+	font-weight: normal;
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 15px; /* old value : 9px */
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #F8F8F8;
+	margin: 15px 0;
+}
+
+
+
+/* 
+ * CSS Tools (used by the php scripts)
+ */
+
+.grey {
+	color: #999;
+}
+
+.red {
+	color: #D0583F;
+}
+
+.green {
+	color: green;
+}
+
+.highlight-red {
+	background-color: #D0583F;
+	color: #FFF;
+	padding: 0 3px;
+
+	/* Html 5 */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.highlight-green {
+	background-color: green;
+	color: #FFF;
+	padding: 0 3px;
+
+	/* Html 5 */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.center {
+	text-align: center;
+}
+
+
+/* 
+ * Wrapper, header, main, footer
+ */
+
+#admin_wrapper {
+	margin: 0 auto;
+	border: 1px solid #777;
+	border-width: 0 1px;
+	background-color: #fff;
+	box-shadow: 0 0 20px #222;
+
+	min-width: 800px;
+	max-width: 1280px;
+	min-height: 100%;
+	position: relative;
+}
+
+#admin_header {
+	position: relative;
+	z-index: 3; /* For ie */
+}
+
+#admin_left {
+	float: left;
+	padding-right: 1px;
+	position: relative;
+	z-index: 3; /* For ie */
+}
+
+#admin_main {
+	position: relative;
+	padding-top: 17px; /* pathway height */
+	padding-bottom: 30px; /* footer height */
+	overflow: hidden;
+	zoom: 1; /* For ie */
+}
+
+#admin_main_header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	background: url(images/admin-main-header.gif) repeat-x bottom #FAFAFA;
+	line-height: 30px;
+	text-align: right;
+}
+
+#admin_main_header a {
+	padding: 0 10px;
+}
+
+#admin_main_content {
+	padding: 15px 20px;
+}
+
+#admin_footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #333;
+	background: url(images/footer-bg.gif) repeat-x bottom #999;
+}
+
+#admin_footer div {
+	height: 30px;
+	color: #EEE;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 91.67%;
+	line-height: 25px;
+	text-align: center;
+	background: url(images/footer2-bg.jpg) no-repeat center bottom;
+}
+
+#admin_footer a,
+#admin_footer a:link,
+#admin_footer a:visited {
+	color: #DDD;
+	text-decoration: none;
+}
+
+#admin_footer a:hover,
+#admin_footer a:active,
+#admin_footer a:focus  {
+	color: #FFF;
+
+	/* Html 5 */
+	text-shadow: 1px 1px 0px #444;
+}
+
+
+
+/* DIV separator */
+.div-sep {
+	margin: 		0 		!important;
+	padding: 		0 		!important;
+	border: 		none 	!important;
+	background: 	none 	!important;
+	height: 		1px 	!important;
+	line-height: 	1px 	!important;
+	font-size: 		1px 	!important;
+}
+
+
+
+/* 
+ * Header logo
+ */
+
+#admin_header div#logo {
+	margin: 0;
+	padding: 0;
+	height: 59px;
+	background: url(images/administrator-bg.gif) repeat-x bottom left #F8F8F8;
+}
+
+#admin_header div#logo a {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 0;
+	height: 58px;
+	padding-left: 280px;
+	overflow: hidden;
+	background: url(images/administrator.jpg) no-repeat top left transparent;
+}
+
+#admin_header h1 {
+	margin: 0;
+	padding: 0;
+	position: absolute; /* the span tag inside this h1 is buggy with ie6 because of this absolute position */
+	top: 0;
+	left: 50%;
+	width: 20%;
+	margin-left: -10%;
+	padding: 4px 15px 5px 15px;
+	background: url(images/header-h1-sitename.gif) no-repeat left bottom transparent;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 83.33%;
+	font-weight: normal;
+	color: #87A140;
+	text-align: center;
+}
+
+#admin_header h1 span {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 15px;
+	height: 60px; /* max height */
+	background: url(images/header-h1-sitename.gif) no-repeat right bottom transparent;
+}
+
+
+
+#admin_header #switchmenu {
+	position: absolute;
+	top: 7px;
+	right: 78px;
+}
+
+#admin_header #goto-frontend {
+	position: absolute;
+	top: 7px;
+	right: 110px;
+}
+
+
+
+/*
+ * Header menu
+ */
+
+div#admin_header_menu {
+	min-height: 2.166em; /* Match top ul of superfish menu : .sf-menu */
+	border-top: 1px solid #89c8ff;
+	border-bottom: 1px solid #5f788a;
+	background: url(images/mainmenu-bg.gif) repeat-x bottom #3F86BA;
+}
+
+div.admin_header_menu,
+br.admin_header_menu {
+	clear: left;
+}
+
+ul.admin_header_menu {
+	overflow: hidden;
+	zoom: 1; /* For ie6 */
+	font-weight: bold;
+	font-size: 108.33%;
+	line-height: 2em; /* Match .sf-menu */
+}
+
+ul.admin_header_menu li {
+	display: inline;
+}
+
+ul.admin_header_menu li a,
+ul.admin_header_menu li a:link,
+ul.admin_header_menu li a:visited,
+ul.admin_header_menu li.current a,			/* current page for one version */
+ul.admin_header_menu li.current span {		/* current page for alternative version (replacement of the a tag) */
+	padding: 1em 16px 1em 8px;			/* top and bottom should reach out the ul tag */
+	border-right: 1px solid #255E83;
+	border-left: 1px solid #3F86BA;
+}
+
+ul.admin_header_menu li a span,
+ul.admin_header_menu li span span {
+	display: none !important;
+}
+
+ul.admin_header_menu li a,
+ul.admin_header_menu li a:link,
+ul.admin_header_menu li a:visited {
+	background: url(images/mainmenu.gif) no-repeat right center;
+	color: #C3DBED;
+	text-decoration: none;
+}
+
+ul.admin_header_menu li a:hover,
+ul.admin_header_menu li a:active,
+ul.admin_header_menu li a:focus,
+ul.admin_header_menu li.current a,
+ul.admin_header_menu li.current span {
+	background: url(images/mainmenu-hover.gif) no-repeat left center;
+	color: #FAFAFA;
+	text-decoration: none;
+}
+
+ul.admin_header_menu ul {
+	display: none;
+}
+
+
+
+/* Header menu vertical (handled by javascript) */
+.admin_wrapper-alt {
+	background: url(images/vertical-menu-bg.gif) repeat-y left #FFF;
+}
+
+div.admin_header_menu-alt {
+	min-height: 2px !important;
+	height: 2px !important;
+}
+
+
+
+/*
+ * Pathway
+ */
+
+#admin-pathway {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 99%;
+	line-height: 10px;
+	padding: 3px 0.5%;
+	background: url(images/pathway.gif) repeat-x top #F8F8F8;
+	border-bottom: 1px solid #D8D8D8;
+	color: #888;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+
+#admin-pathway span {
+	padding: 0 3px;
+	color: #CCC;
+}
+
+
+
+/*
+ *  User login
+ */
+
+h1#admin_login-title {
+	margin: 124px 0 36px 0;
+}
+
+#admin_login-form,
+#admin_logout-form {
+	border: 1px solid #DDD;
+	background: url(images/login-form-bg.gif) repeat-x left bottom #FAFAFA;
+	text-align: center;
+}
+
+#admin_login-form {
+	margin: 0 auto 50px auto;
+	padding: 15px 25px 15px 25px;
+	width: 300px;
+}
+
+#admin_login-form table {
+
+}
+
+/* alternative version : fixed size box for login form (simply disable this if you prefer the default version) */
+#admin_login-form {
+	height: 100px;
+	border: none;
+	background: url(images/login-fixed-bg-lock.gif) no-repeat left top transparent;
+} /* end of : alternative version */
+
+/* Designed for IE to be the same as FF */
+#admin_login-form .form-submit {
+	width: 95px !important;
+} /* end */
+
+#admin_logout-form {
+	position: absolute;
+	z-index: 2;
+	border-top: none;
+	top: 16px;
+	right: 6px;
+	padding: 4px 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 91.67%;
+	color: #2C79B3;
+
+	/* Html 5 */
+	-moz-border-radius: 2px; 
+	-webkit-border-radius: 2px; 
+	border-radius: 2px;
+}
+
+#admin_logout-form p {
+	margin: 0;
+}
+
+
+/*
+ * Tabulator
+ */
+
+#admin_tabulator {
+	margin-bottom: 15px;
+}
+
+#admin_tabulator #tab-header,
+#admin_tabulator #tab-main,
+#admin_tabulator #tab-footer {
+	padding-right: 27px; /* 20px (+ 7px for the shadow) */
+}
+
+/* Menu */
+
+#admin_tabulator #tab-header {
+	background: url(images/tabulator-header.gif) no-repeat right center;
+}
+
+#admin_tabulator #tab-header ul {
+	overflow: hidden;
+	zoom: 1; /* For ie6 */
+	background: url(images/tabulator-header.gif) no-repeat left center;
+	font-weight: bold;
+	font-size: 116.67%;
+	line-height: 48px;
+
+	padding-left: 20px; /* Adjust this padding */
+}
+
+#admin_tabulator #tab-header ul li {
+	display: inline;
+	margin-right: 1px; /* Space beween two links */
+}
+
+#admin_tabulator #tab-header ul li a,
+#admin_tabulator #tab-header ul li a:link,
+#admin_tabulator #tab-header ul li a:visited,
+#admin_tabulator #tab-header ul li.current a,				/* current page for one version */
+#admin_tabulator #tab-header ul li.current span {			/* current page for alternative version(replacement of the a tag) */
+	padding: 24px 16px 24px 0;								/* top and bottom should reach out the ul tag */
+}
+
+#admin_tabulator #tab-header ul li a span,					/* link to another page */
+#admin_tabulator #tab-header ul li.current a span,
+#admin_tabulator #tab-header ul li.current span span {		/* current page */
+	padding: 24px 0 24px 8px;
+}
+
+#admin_tabulator #tab-header ul li a,
+#admin_tabulator #tab-header ul li a:link,
+#admin_tabulator #tab-header ul li a:visited {
+	background: url(images/tabulator-menu.gif) no-repeat right center;
+	color: #666;
+	text-decoration: none;
+
+	/* Html 5 */
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#admin_tabulator #tab-header ul li a span {
+	background: url(images/tabulator-menu.gif) no-repeat left center;
+}
+
+#admin_tabulator #tab-header ul li a:hover,
+#admin_tabulator #tab-header ul li a:active,
+#admin_tabulator #tab-header ul li a:focus,
+#admin_tabulator #tab-header ul li.current a,
+#admin_tabulator #tab-header ul li.current span {
+	background: url(images/tabulator-menu-active.gif) no-repeat right center !important; /* !important for ie6 */
+	color: #2C79B3;
+	text-decoration: none;
+}
+
+#admin_tabulator #tab-header ul li a:hover span,
+#admin_tabulator #tab-header ul li a:active span,
+#admin_tabulator #tab-header ul li a:focus a,
+#admin_tabulator #tab-header ul li a:focus span,
+#admin_tabulator #tab-header ul li.current a span,
+#admin_tabulator #tab-header ul li.current span span {
+	background: url(images/tabulator-menu-active.gif) no-repeat left center !important; /* !important for ie6 */
+}
+
+/* Main content */
+
+#admin_tabulator #tab-main {
+	background: url(images/tabulator-main.gif) repeat-y right;
+}
+
+#admin_tabulator #tab-main #tab-main2 {
+	background: url(images/tabulator-main.gif) repeat-y left;
+	padding: 4px 0px 20px 20px; /* Main padding (padding-right already included) */
+}
+
+/* Footer */
+
+#admin_tabulator #tab-footer {
+	background: url(images/tabulator-footer.gif) no-repeat right bottom;
+}
+
+#admin_tabulator #tab-footer div {
+	background: url(images/tabulator-footer.gif) no-repeat left bottom;
+}
+
+
+
+/*
+ * SubMenu
+ */
+
+/* Wrapper */
+
+#admin_submenu div#submenu-header {
+	margin-top: 4px;
+	float: right;
+	width: 200px;
+	background: url(images/submenu-header-bg.gif) repeat-y left;
+}
+
+#admin_submenu div#submenu-header div#header-top {
+	height: 20px;
+	background: url(images/submenu-header-top.gif) no-repeat left top;
+}
+
+#admin_submenu div#submenu-header div#header-bottom {
+	height: 60px;
+	background: url(images/submenu-header-bottom.gif) no-repeat left bottom;
+}
+
+#admin_submenu div#submenu-main {
+	margin-right: 225px;
+}
+
+#admin_submenu div#submenu-footer {
+	clear: right;
+}
+
+/* Links */
+
+#admin_submenu div#submenu-header ul {
+	list-style: none;
+	font-weight: bold;
+	font-size: 116.67%; /* 14px */
+	line-height: 114.29%; /* 16px */
+}
+
+#admin_submenu div#submenu-header ul li a,
+#admin_submenu div#submenu-header ul li a:link,
+#admin_submenu div#submenu-header ul li a:visited,
+#admin_submenu div#submenu-header ul li.current a,
+#admin_submenu div#submenu-header ul li.current span {			/* current page (replacement of the a tag) */
+	height: 40px;
+	display: block;
+	text-decoration: none;
+}
+
+#admin_submenu div#submenu-header ul li a span,					/* link to another page */
+#admin_submenu div#submenu-header ul li.current a span
+#admin_submenu div#submenu-header ul li.current span span {		/* current page */
+	padding: 0 !important;
+	border: none !important;
+	background-image: none !important;
+	display: inline !important;
+}
+
+#admin_submenu div#submenu-header ul li a,
+#admin_submenu div#submenu-header ul li a:link,
+#admin_submenu div#submenu-header ul li a:visited {
+	padding: 8px 0 0 13px;
+	color: #888; /* Previous value : #BBB */
+}
+
+#admin_submenu div#submenu-header ul li a:hover,
+#admin_submenu div#submenu-header ul li a:active,
+#admin_submenu div#submenu-header ul li a:focus,
+#admin_submenu div#submenu-header ul li.current a,
+#admin_submenu div#submenu-header ul li.current span {
+	padding: 8px 0 0 15px;
+	background: url(images/submenu-header-link.gif) no-repeat left top;
+	color: #87A140;
+	font-style: italic;
+	text-decoration: none;
+}
+
+
+
+#admin_welcome {
+	background: url(images/welcome-bg.jpg) no-repeat center 100px;
+	min-height: 270px; /* 100 + 170 ('welcome-bg.jpg' height) - must be adapted for ie6 */
+}
+
+
+
+/*
+ * Fieldsets
+ */
+
+.admin_fieldsets-wrapper {
+	display: block;
+	border: 1px solid #E4E4E4;
+	padding: 0;
+	margin: 5px 0 15px 0;
+	background: url(images/fieldset-wrapper-bg.gif) repeat-y right #F9F9F9;
+
+	/* Html 5 */
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+.admin_fieldsets-wrapper-content {
+	padding: 10px 10px 0 7px;
+}
+
+.admin_fieldsets-wrapper legend {
+	margin-left: 7px;
+	padding: 3px 6px;
+	color: #555;
+	font-size: 110%;
+	font-style: normal;
+	letter-spacing: 0.10625em;
+	background-color: #FFF;
+	border: 1px solid #E4E4E4;
+
+	/* Html 5 */
+	-moz-box-shadow: 1px 1px 3px #DDD;
+	-webkit-box-shadow: 1px 1px 3px #DDD;
+	box-shadow: 1px 1px 3px #DDD;
+}
+
+
+
+.admin_fieldset {
+	display: block;
+	border: 1px solid #CCC;
+	padding: 15px;
+	margin: 5px 0 15px 0;
+	background: url(images/fieldset-bg.gif) repeat-y left #FFF;
+
+	/* Html 5 */
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+.admin_fieldset legend {
+	margin-left: 19px;
+	padding: 0 6px;
+	color: #777;
+	font-size: 100%;
+	font-style: normal;
+	letter-spacing: 0.125em;
+	background-color: #FFF;
+	border: none;
+	font-variant: small-caps;
+
+	/* Html 5 */
+	-moz-box-shadow: 0px 0px 0px #FFF;
+	-webkit-box-shadow: 0px 0px 0px #FFF;
+	box-shadow: 0px 0px 0px #FFF;
+}
+
+
+
+/*
+ * Floating content
+ */
+
+div.admin_floating-content {
+	
+}
+
+div.admin_floating-content-left {
+	float: left;
+	margin-right: 10px;
+}
+
+br.admin_floating-content-left {
+	clear: left;
+}
+
+div.admin_floating-content-right {
+	float: right;
+	margin-left: 10px;
+}
+
+br.admin_floating-content-right {
+	clear: right;
+}
+
+
+
+/*
+ * Multipage
+ */
+
+div.admin_multipage-nav {
+	line-height: 2.3em;
+}
+
+span.admin_multipage-nav {
+	border: 1px solid #DDD !important;
+	background: url(images/simple-multi-page-navig-bg.gif) no-repeat top left #FAFAFA !important;
+	padding: 0.5em 10px !important;
+	color: #111;
+}
+
+span.admin_multipage-nav span {
+	color: #999;
+}
+
+span.admin_multipage-nav span.admin_multipage-nav-title {
+	color: #999;
+	font: 11px Verdana;
+}
+
+
+
+/*
+ * Simple Stats
+ */
+
+.simpleStats {
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	border-color: #CCC;
+	font-size: 100%;
+	margin-bottom: 20px;
+}
+
+.simpleStats thead tr th,
+.simpleStats thead tr td,
+.simpleStats tbody tr td {
+	border-width: 0 0 1px 1px !important;
+	border-style: solid !important;
+	border-color: #CCC !important;
+	padding: 2px 6px !important;
+}
+
+.simpleStats tbody tr th {
+	border-width: 0 0 1px 1px !important;
+	border-style: solid !important;
+	border-color: #CCC !important;
+	padding: 0 !important;
+}
+
+.simpleStats tbody tr td.value {
+	background-color: #FFFACD;
+}
+
+.simpleStats thead tr th,
+.simpleStats thead tr td {
+	background: url(images/stats-title-bg.gif) repeat-x top #EEF3E0 !important;
+}
+
+.simpleStats thead tr th {
+	color: #777 !important;
+	text-align: center !important;
+}
+
+.simpleStats thead tr td {
+	font-weight: bold;
+}
+
+
+
+/* Horizontal */
+
+.simpleStats-horizontal {
+	position: relative !important;
+	height: 24px !important;
+	font: normal 10px/24px Verdana !important;
+	color: #000 !important;
+	border: 1px solid #FFF !important;
+}
+
+.simpleStats-horizontal div.simpleStats-horizontal-percent,
+.simpleStats-horizontal div.simpleStats-horizontal-bar {
+	position: absolute !important;
+	height: 24px !important;
+	border: none !important;
+}
+
+.simpleStats-horizontal div.simpleStats-horizontal-percent {
+	z-index: 2 !important;
+	padding-left: 5px !important;
+	border: none !important;
+}
+
+.simpleStats-horizontal div.simpleStats-horizontal-bar {
+	z-index: 1 !important;
+	background: url(images/stats-bar-H-bg.jpg) no-repeat 0 0 #DDD !important;
+	border: none !important;
+}
+
+/* Vertical */
+
+.simpleStats-vertical {
+	position: relative !important;
+	width: 24px !important;
+	font: normal 8px Verdana !important;
+	color: #000 !important;
+	border: 1px solid #FFF !important;
+	float: left;
+}
+
+.simpleStats-vertical div.simpleStats-vertical-percent,
+.simpleStats-vertical div.simpleStats-vertical-bar {
+	position: absolute !important;
+	width: 24px !important;
+	border: none !important;
+}
+
+.simpleStats-vertical div.simpleStats-vertical-percent {
+	z-index: 2 !important;
+	padding-bottom: 5px !important;
+	border: none !important;
+	bottom: 0;
+}
+
+.simpleStats-vertical div.simpleStats-vertical-bar {
+	z-index: 1 !important;
+	background: url(images/stats-bar-V-bg.jpg) no-repeat left bottom #DDD !important;
+	border: none !important;
+	bottom: 0;
+}
+
+
+
+/*
+ * Boxes (for admin_)
+ *
+ * Online box without icon :	<p class="box"><span class="box-TYPE">ONLINE CONTENT HERE</span></p>
+ * Online box with icon :		<p class="box"><span class="box-TYPE"><span class="icon">ONLINE CONTENT HERE</span></span></p>
+ *
+ * Block box without icon :		<div class="box-TYPE">BLOCK CONTENT HERE</div>
+ * Block box with icon :		<div class="box-TYPE"><div class="icon">BLOCK CONTENT HERE</div></div>
+ */
+
+p.admin_box {
+	padding: 0.5em 0;
+	margin: 1.667em;				/* Special for admin ! */
+}
+
+.admin_box-error,
+.admin_box-ok,
+.admin_box-warning,
+.admin_box-info,
+.admin_box-help,
+.admin_box-tips,
+.admin_box-missing {
+	line-height: 141.67%; /* same as <p> */
+	margin: 1.667em;				/* Special for admin ! */
+	padding: 0.5em 1em;
+	text-align: justify;
+	font-size: 108.33%; /* 13px */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+	/* Html 5 */
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px;
+
+	/* Html 5 */
+	-moz-box-shadow: 1px 1px 3px #DDD;
+	-webkit-box-shadow: 1px 1px 3px #DDD;
+	box-shadow: 1px 1px 3px #DDD;
+}
+
+.admin_box-error	{ border: 1px solid #D0583F; }
+.admin_box-ok		{ border: 1px solid #559726; }
+.admin_box-warning	{ border: 1px solid #D1A82C; }
+.admin_box-info		{ border: 1px solid #6187B3; }
+.admin_box-help		{ border: 1px solid #6187B3; }
+.admin_box-tips		{ border: 1px solid #666666; }
+.admin_box-missing	{ border: 1px solid #E2E2E2; }
+
+.admin_box-error	{ background: url(images/box-red.gif	) repeat-x bottom #FDFDFD; }
+.admin_box-ok		{ background: url(images/box-green.gif	) repeat-x bottom #FDFDFD; }
+.admin_box-warning	{ background: url(images/box-yellow.gif	) repeat-x bottom #FDFDFD; }
+.admin_box-info		{ background: url(images/box-blue.gif	) repeat-x bottom #FDFDFD; }
+.admin_box-help		{ background: url(images/box-blue.gif	) repeat-x bottom #FDFDFD; }
+.admin_box-tips		{ background: url(images/box-grey.gif	) repeat-x bottom #FDFDFD; }
+.admin_box-missing	{  }
+
+.admin_box-error	, .admin_box-error p	{ color: #D0583F; }
+.admin_box-ok		, .admin_box-ok p		{ color: #559726; }
+.admin_box-warning	, .admin_box-warning p	{ color: #D1A82C; }
+.admin_box-info		, .admin_box-info p		{ color: #6187B3; }
+.admin_box-help		, .admin_box-help p		{ color: #6187B3; }
+.admin_box-tips		, .admin_box-tips p		{ color: #666666; }
+.admin_box-missing	, .admin_box-missing p	{  }
+
+.admin_box-error .icon,
+.admin_box-ok .icon,
+.admin_box-warning .icon,
+.admin_box-info .icon,
+.admin_box-help .icon,
+.admin_box-tips .icon,
+.admin_box-missing .icon {
+	/*padding: 1px 0; /* Might be necessary for Safari on Mac */
+	padding-left: 24px;
+}
+
+.admin_box-error .icon 		{ background: url(images/box-icon-error.png		) no-repeat 0 0px transparent; }
+.admin_box-ok .icon 		{ background: url(images/box-icon-ok.png		) no-repeat 0 0px transparent; }
+.admin_box-warning .icon 	{ background: url(images/box-icon-warning.png	) no-repeat 0 0px transparent; }
+.admin_box-info .icon 		{ background: url(images/box-icon-info.png		) no-repeat 0 0px transparent; }
+.admin_box-help .icon 		{ background: url(images/box-icon-help.png		) no-repeat 0 0px transparent; }
+.admin_box-tips .icon 		{ background: url(images/box-icon-tips.png		) no-repeat 0 0px transparent; }
+.admin_box-missing .icon 	{ background: url(images/box-icon-missing.png	) no-repeat 0 0px transparent; }
+
+.admin_box-error hr,
+.admin_box-ok hr,
+.admin_box-warning hr,
+.admin_box-info hr,
+.admin_box-help hr,
+.admin_box-tips hr,
+.admin_box-missing hr {
+	margin: 0.5em 0;
+	border: none;
+	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #FFF;
+}
+
+p.admin_box-title { /* used by boxManager::multiMessage() method */
+	font-size: 115.38%; /* 15px */
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left;
+}
+
+
+
+/**
+ * Customize the libraries
+ */
+
+/* comResource */
+.comResource-beautifyPath {
+	font-size: 108%;
+	color: #B22222;
+}
+
+
+
+/**
+ * Customize the components
+ */
+
+.admin_comNewsletter_send {
+	width: 100%;
+	height: 475px;
+	border: 1px solid transparent;
+}

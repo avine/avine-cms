@@ -1,0 +1,132 @@
+/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.fr). Dual licensed under the MIT and GPL Version 2 licenses. */
+
+
+
+/*
+ * jQuery : Emulate target="_blank"
+ *
+ * Apply js : <a href="http://www.mysite.com" class="external"></a>
+ * Disable css : <a href="http://www.mysite.com" class="external no-arrow"></a>
+ */
+
+.external {
+	padding-right: 12px;
+	background: url(images/external-link.gif) no-repeat right top;
+}
+
+.external.no-arrow {
+	padding-right: 0;
+	background-image: none;
+}
+
+
+
+/*
+ * jQuery : Replace <hr /> by <div class="hr"></div>
+ */
+
+div.hr {
+	height: 3px;
+	background: url(images/hr-888.gif) repeat-x center center;
+}
+
+div.hr hr {
+	display: none;
+}
+
+
+
+/*
+ * jCarousel
+ * ---------
+ */
+
+/* '#carousel' is be the id of the slideshow (you can check this in 'template_js.js')
+   So, this css rule is designed in case javascript is disabled. Then, only the first slide should be visible */
+
+#carousel {
+	height: 180px; /* Height of each slide */
+	overflow: hidden;
+}
+
+/* jcarousel control */
+
+.jcarousel-control {
+	position: absolute;
+	right: 57px;
+	bottom: 13px;
+}
+
+.jcarousel-control a {
+	float: left;
+	width: 7px;
+	height: 7px;
+	margin-right: 7px;
+	overflow: hidden;
+	text-indent: -1000px;
+	background-color: #ddd;
+
+	/* Html 5 */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.jcarousel-control a:hover,
+.jcarousel-control a:focus {
+	background-color: #81ABCC;
+}
+
+.jcarousel-control a.current {
+	background-color: #2C79B3;
+}
+
+
+
+/*
+ * ------------------------------------
+ * Avine\Lib\Js library : customization
+ * ------------------------------------
+ */
+
+
+
+/*
+ * Toggle behaviour
+ */
+ 
+.toggle .toggle-title {
+	background: url(images/toggle-bullet-h2-blue.gif) no-repeat 0 2px;
+	padding-left: 22px;
+}
+.toggle .toggle-title-active {
+	background: url(images/toggle-bullet-h2-blue.gif) no-repeat 0 -298px;
+}
+
+/* Special toggle for h2 */
+.toggle h2.toggle-title {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 1px;
+	color: #888;
+}
+.toggle h2.toggle-title-active {
+	border-bottom: 1px solid #2C79B3; /* default h2 color */
+	color: #2C79B3; /* default h2 color */
+}
+.toggle h2.toggle-title + .toggle-content {
+	margin-left: 6px;
+	padding-left: 12px;
+	border-left: 4px solid #E5E5E5;
+}
+
+/* Special toggle for h3 */
+.toggle h3.toggle-title {
+	background: url(images/toggle-bullet-h3-green.gif) no-repeat 0 1px;
+	padding-left: 18px;
+	color: #888;
+}
+.toggle h3.toggle-title-active {
+	background: url(images/toggle-bullet-h3-green.gif) no-repeat 0 -299px;
+	color: #9DBA4F; /* default h3 color */
+}
+

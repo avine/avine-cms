@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>{subject}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="{site_url}/global/favicon.ico" />
+
+<style type="text/css">
+
+body,
+div.wrapper {
+  background-color: #e1e6fa;
+}
+
+div.wrapper a {
+  color: #375d81;
+  text-decoration: underline;
+}
+
+body,
+div.wrapper,
+div.wrapper h1,
+div.wrapper h2,
+div.wrapper h3,
+div.wrapper p,
+div.wrapper th,
+div.wrapper td {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #444444;
+}
+
+body,
+div.wrapper    { line-height: 1.50em; }
+div.wrapper h1 { font-size: 2.17em; line-height: 1.19em; margin: 0 0 0.6154em 0; }
+div.wrapper h2 { font-size: 1.42em; line-height: 1.29em; margin: 0.94em 0 1em 0; }
+div.wrapper h3 { font-size: 1.17em; line-height: 1.28em; margin: 0 0 0.143em 0; }
+div.wrapper p  { font-size: 1.00em; line-height: 1.50em; margin: 0 0 1.5em 0; }
+
+div.wrapper h1 span,
+div.wrapper h2 span,
+div.wrapper h3 span {
+  font-weight: normal;
+}
+
+div.wrapper h1, div.wrapper h1 a { color: #375d81; text-decoration: none; }
+div.wrapper h2, div.wrapper h2 a { color: #4e83b5; text-decoration: none; }
+div.wrapper h3, div.wrapper h3 a { color: #b23600; text-decoration: none; }
+
+div.wrapper h1 {
+  border-bottom: 1px solid #abc8e2;
+}
+
+div.wrapper p {
+  text-align: justify;
+}
+
+div.wrapper img {
+  border: none;
+}
+
+div.wrapper table {
+  margin: 0;
+  border: none;
+  border-collapse: collapse;
+}
+
+div.wrapper th,
+div.wrapper td {
+  vertical-align: top;
+}
+
+div.wrapper table.wrapper {
+  width: 650px;
+  margin: 0.8em auto;
+  border: 1px solid #99b3c9;
+}
+
+div.wrapper table.wrapper td.header {
+  height: 90px;
+  border-bottom: 1px solid #99b3c9;
+  background-color: #abc8e2;
+  text-align: center;
+  font-size: 2.17em;
+}
+
+div.wrapper table.wrapper td.main {
+  padding: 15px;
+  background-image: url({site_url}/components/com_newsletter/tmpl/default/main.gif);
+  background-repeat: repeat-y;
+  background-color: #ffffff;
+}
+
+div.wrapper table.wrapper td.footer {
+  height: 30px;
+  border-top: 1px solid #99b3c9;
+  background-color: #375d81;
+  text-align: center;
+  color: #eeeeee;
+}
+
+div.wrapper table.wrapper td.footer a {
+  color: #eeeeee;
+}
+
+div.wrapper table.wrapper td.header img,
+div.wrapper table.wrapper td.footer img {
+  vertical-align: bottom;
+}
+
+div.wrapper p.message {
+  margin: 0.5em 0;
+  text-align: center;
+  color: #666666;
+  font-size: 0.92em;
+  font-family: Arial;
+}
+
+div.wrapper p.message a {
+  color: #666666;
+}
+
+div.wrapper table.item {
+  /*margin: 10px 0 0px 0;*/
+  border-top: 10px solid #ffffff;
+  width: 618px;
+}
+
+div.wrapper td.item-image {
+  width: 105px;
+}
+
+div.wrapper td.item-image img {
+  margin-top: 3px;
+  border: 1px solid #CCC;
+}
+
+div.wrapper td.item-content h2 {
+  margin-top: 0;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="wrapper" style="background-color:#e1e6fa; font-size:13px; font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; color:#444444;">
+
+<p class="message" style="margin:.5em 0; text-align:center; color:#666666; font-size:.92em; font-family:Arial;">
+  Si le message ne s&#39;affiche pas correctement, <a href="{newsletter_url}">cliquer ici</a>.</p>
+
+<table class="wrapper" width="650" cellspacing="0" cellpadding="0" align="center" style="margin:0.8em auto; border:1px solid #99b3c9;">
+<tr>
+  <td class="header" height="90" style="border-bottom:1px solid #99b3c9; background-color:#abc8e2; text-align:center; font-size:2.17em;"><a href="{site_url}" title="{site_url}"><img src="{site_url}/components/com_newsletter/tmpl/default/header.jpg" width="650" height="90" alt="{site_name}" style="vertical-align:bottom;" /></a></td>
+</tr>
+<tr>
+  <td class="main" style="padding:15px; background-image:url({site_url}/components/com_newsletter/tmpl/default/main.gif); background-repeat:repeat-y; background-color:#ffffff;">
+
+
+<!-- SEPARATOR -->
+
+
+<table class="item" style="border-top:10px solid #ffffff; width:618px;">
+	<tr>
+		<!-- {image_thumb} --><td class="item-image" style="width:105px;">{image_thumb}</td><!-- {image_thumb} -->
+		<td class="item-content">
+			<h2><a href="{element_link}" title="En savoir plus...">{title}<!-- {title_alias} --><br /><span>{title_alias}</span><!-- {title_alias} --></a></h2>
+			{text_intro}
+		</td>
+	</tr>
+</table>
+
+
+<!-- SEPARATOR -->
+
+
+<h3><a href="{element_link}" title="En savoir plus...">{title}<!-- {title_alias} --><br /><span>{title_alias}</span><!-- {title_alias} --></a></h3>
+{text_intro}
+
+
+<!-- SEPARATOR -->
+
+
+  </td>
+</tr>
+<tr>
+  <td class="footer" height="30" style="border-top:1px solid #99b3c9; background-color:#375d81; text-align:center;">
+    <a href="{site_url}" title="{site_url}" style="color:#eeeeee;"><img src="{site_url}/components/com_newsletter/tmpl/default/footer.jpg" width="650" height="30" alt="{site_name}" style="vertical-align:bottom;" /></a></td>
+</tr>
+</table>
+
+<p class="message" style="margin:0.5em 0; text-align:center; color:#666666; font-size:.92em; font-family:Arial;">
+  Newsletter du {date}<br />
+  Vous recevez ce message, car vous &ecirc;tes abonn&eacute; &agrave; la Newsletter de&nbsp;:<br />
+  <b>{site_name}</b>.<br />
+  Pour &ecirc;tre s&ucirc;r de recevoir nos Newsletters,<br />
+  pensez &agrave; ajouter notre adresse mail &agrave; votre carnet d&#39;adresses.<br />
+  Pour vous d&eacute;sinscrire, <a href="{unsubscribe}">cliquer ici</a>.</p>
+
+</div>
+
+{user_track}
+
+</body>
+</html>

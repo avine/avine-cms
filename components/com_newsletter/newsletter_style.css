@@ -1,0 +1,16 @@
+
+fieldset#newsletter-fieldset {
+	margin: 15px auto 30px auto;
+	width: 450px;
+}
+
+#newsletter-fieldset,
+#newsletter-fieldset p {
+	text-align: center;
+}
+
+
+/* Add/remove class when clear #newsletter_subscribe_email on focus */
+.mod_newsletter_clear {
+	color: #999 !important;
+}

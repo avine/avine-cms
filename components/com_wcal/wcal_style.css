@@ -1,0 +1,341 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+.wcal-table {	
+	margin: 0;
+	border-collapse: collapse;
+	border: 1px solid #CCC;
+	font-size: 100%;
+
+	width: 99.5%;
+	table-layout: fixed !important;
+
+	/* Html 5 */
+	-moz-box-shadow: 2px 2px 2px #EEE;
+	-webkit-box-shadow: 2px 2px 2px #EEE;
+	box-shadow: 2px 2px 2px #EEE;
+}
+
+.wcal-table th,
+.wcal-table td {
+	vertical-align: top;
+	border: 1px solid #CCC;
+	text-align: center;
+}
+
+.wcal-table td {
+	padding: 2px 0 1em 0;
+	background-color: #fcfcfc;
+}
+
+.wcal-table th {
+	padding: 2px 6px;
+	background: url(../../../libraries/lib_table/images/table-th-bg.gif) repeat-x left center #E3F1BD; /* From lib_table library */
+	color: #777;
+
+	/* Html 5 */
+	text-shadow: 0 1px 0 #FFF;
+}
+
+.wcal-table th.current {
+	background: url(images/table-th-bg-current.gif) repeat-x center #FFFACD;
+	color: #444;
+}
+.wcal-table td.current {
+	background: url(images/date-current.png) no-repeat center bottom #FFFACD;
+	padding-bottom: 16px;
+
+	/* Html 5 */
+	-moz-box-shadow: 0 0 5px #999;
+	-webkit-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+}
+.wcal-table td.current .wcal-event {
+	border: 1px solid #FFF;
+	outline: 1px solid #444;
+	background: url(images/event-bg-current.gif) repeat transparent;
+}
+
+
+
+.wcal-event {
+	position: relative;
+	zoom: 1; /* For ie6 */
+	padding-bottom: 17px; /* height of the image in .wcal-link */
+
+	margin: 1px;
+	border: 1px solid #AAA;
+	background: url(images/event-bg.png) repeat-x bottom;
+
+	/* Html 5 */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.wcal-event .wcal-time {
+	border-bottom: 1px solid #FFF;
+	padding: 2px 8px;
+
+	background: url(images/time-bg.gif) repeat-x center #777;
+	color: #fff;
+
+	/* Html 5 */
+	text-shadow: 1px 1px 0 #666;
+
+	font: 75% Verdana;
+	letter-spacing: -1px;
+}
+
+.wcal-event .wcal-infos {
+	padding: 4px 8px;
+	font-size: 91.67%;
+	line-height: 115%;
+}
+
+.wcal-event .wcal-infos strong,
+.wcal-event .wcal-infos label {
+	font-size: 109.1%;
+	font-weight: bold;
+}
+
+.wcal-event label {
+	display: block;
+}
+
+.wcal-event input { /* This is the checkbox */
+	position: absolute;
+	right: 0;
+	bottom: 0;	
+}
+
+.wcal-event .wcal-link {
+	position: absolute;
+	left: 2px;
+	bottom: 1px;
+}
+
+
+
+#wcal-date-current {
+	margin-bottom: 1em;
+	padding: 6px 8px;
+	border: 1px solid #CCC;
+	background-color: #FFFACD;
+	line-height: 16px;
+	text-align: center;
+
+	/* Html 5 */
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#wcal-date-current span.wcal-date-current {
+	padding-left: 17px;
+	background: url(images/date-current.png) no-repeat -3px center;
+}
+
+#wcal-date-current a.wcal-date-current {
+	font-size: 92%;
+}
+
+#wcal-date-current * {
+	text-align: center;
+}
+
+
+
+/* Handled by jQuery */
+.wcal-check-all { }
+.wcal-events-amounts { }
+.wcal-reset-sample { }
+
+
+
+#wcal-events-amounts {
+	float: right;
+	margin: 0 2em 5px 15px;
+	padding: 6px 9px;
+	border: 1px solid #ccc;
+	background-color: #FFFACD;
+	font-size: 116.67%;
+
+	/* Html 5 */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#wcal-events-amounts span {
+	color: #aaa;
+}
+
+
+
+#wcal-selected-date-yes	{
+	float: right;
+	padding-right: 32px;
+	line-height: 25px;
+	font-size: 13px;
+	background: url(images/selected-date-yes.jpg) no-repeat right center;
+	color: #277224;
+}
+
+#wcal-selected-date-no	{
+	float: right;
+	padding-right: 32px;
+	line-height: 25px;
+	font-size: 13px;
+	background: url(images/selected-date-no.jpg) no-repeat right center;
+	color: #c24b32;
+}
+
+
+
+.wcal-dedicate-info {
+	float: right;
+	margin-top: 2px;
+	text-indent: 20px;
+	background: url(images/info.png) no-repeat left center;
+	color: #3c5588;
+}
+
+
+
+.wcal-help {
+	text-indent: 20px;
+	background: url(images/help.gif) no-repeat left top;
+	color: #888;
+	font-size: .92em;
+	line-height: 1.4em;
+}
+
+.wcal-help:hover {
+	color: #444;
+	cursor: help;
+}
+
+
+
+#wcal-dedicate-update {
+	text-align: center;
+	/*color: #277224;*/ /* this is a green color */
+}
+
+#wcal-dedicate-update-warning {
+	padding-left: 24px;
+	background: url(images/warning.png) no-repeat left center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #D1A82C;
+}
+
+
+
+.wcal-summary-upd {
+	padding: 0 22px;
+	background: url(images/summary-upd.png) no-repeat left center;
+}
+
+.wcal-summary-del {
+	padding: 0 22px;
+	background: url(images/summary-del.png) no-repeat left center;
+}
+
+
+
+.wcal-category-events {
+	position: relative;
+	margin-bottom: 2em;
+	padding: 0.5em 1em;
+	padding-bottom: 0; /* Handled by the margin-bottom of the <ul> */
+	border: 1px solid #fff;
+	border-left: 4px solid #ddd;
+	background: url(images/category-events.gif) no-repeat right top #f6f6f6;
+
+	/* Html 5 */
+	-moz-border-radius: 0 0 4px 0;
+	-webkit-border-radius: 0 0 4px 0;
+	border-radius: 0 0 4px 0;
+}
+
+.wcal-category-events ul {
+	margin-bottom: 0.5em;
+}
+
+.wcal-category-events-title {
+	position: absolute;
+	top: -1.50em;
+	right: 0;
+	font-size: 1em;
+	line-height: 1.50em;
+	padding: 0 .5em;
+	background-color: #f6f6f6;
+	color: #ccc;
+
+	/* Html 5 */
+	text-shadow: 0 1px 0 #fff;
+
+	/* Html 5 */
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+
+
+.wcal-comment-wrapper {
+	margin: 0 8px 8px 0;
+	box-shadow: 2px 2px 4px #ddd;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background: url(images/comment/xv_v2.png) repeat left top #eeebd5;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.wcal-comment {
+	position: relative !important;
+	padding: .9em 1.2em .6em 1.2em;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	/*background: url(images/comment.gif) repeat-x bottom #f9f9f9;*/
+	background: url(images/comment-top.png) repeat-x top; /* CSS2 */
+	background:	url(images/comment-top.png) repeat-x top,
+				url(images/comment-bottom.png) repeat-x bottom; /* CSS3 */
+}
+
+.wcal-comment h3 span {
+	float: right;
+}
+
+.wcal-comment p {
+	margin-bottom: 1em;
+}
+
+.wcal-comment h5 {
+	margin: 1em 0 0 0;
+	color: #888;
+}
+
+.wcal-comment h5 span {
+	float: right;
+	color: #aaa;
+	font-size: 91%;
+}
+
+.wcal-comment-first {
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+.wcal-comment-last {
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	border: 1px solid #ccc;
+}
+.wcal-comment-first.wcal-comment-last {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}

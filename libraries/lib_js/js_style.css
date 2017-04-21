@@ -1,0 +1,8 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+.formDialog-opener {
+	margin-bottom: 5px;
+	padding-left: 20px;
+	background: url(images/formDialog-opener.png) no-repeat left center;
+}

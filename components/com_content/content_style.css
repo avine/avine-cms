@@ -1,0 +1,243 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/*
+ * Wrapper for : - all subnodes (if exist) - all elements
+ *
+ * Depends of the current component !
+ * [COM_NAME]-wrapper-subnodes	: wrapp subnodes on the same line (if there's more than one per line)
+ * [COM_NAME]-wrapper-elements	: wrapp elements on the same line (if there's more than one per line)
+ */
+
+.content-wrapper-subnodes {
+	margin: 2.5em 0;
+	padding-bottom: 3px;
+	background: url(images/section-navig.gif) repeat-y center; /* Fallback CSS2 */
+	background: /* CSS3 */
+		url(images/section-navig.gif) repeat-y center,
+		url(images/section-navig.gif) repeat-x bottom;
+	background-color: #FFF;
+	border: 1px solid #FFF;
+}
+
+.content-wrapper-elements {
+
+}
+
+
+
+/**
+ * Specifics styles
+ */
+
+.content-break {
+	clear: both;
+}
+
+/* Section */
+
+.section-image {
+	float: left;
+	margin: 4px 15px 5px 0;
+}
+
+.section-break {
+	margin-bottom: 2.5em;
+}
+
+
+
+/* Section navig */
+
+.content-wrapper-subnodes .section-navig {
+	margin: 0 0.8em;
+	padding-top: 5px;
+	background: url(images/section-navig.gif) repeat-x top #FFF !important;
+}
+.content-wrapper-subnodes .section-navig a {
+	display: block;
+}
+
+.content-wrapper-subnodes .section-image {
+	
+}
+
+
+
+/* Item */
+
+.content-wrapper-elements .item-image {
+	float: left;
+	margin: 4px 15px 5px 0;
+}
+
+.item-title-quote {
+	max-width: 33%;
+	float: right;
+	margin: 4px 0 5px 15px;
+	padding: 7px;
+	border: 1px solid #EDD092;
+	background: url(images/item-title-quote.gif) repeat-x bottom #FFF9BB;
+	font-size: 93.33%;
+	line-height: 135%;
+	color: #825e2f;
+	border-radius: 2px;
+}
+
+/* item-infos */
+.item-infos {
+	font-size: 91.67%;
+	color: #666;
+}
+
+.item-infos span {
+	font-weight: normal;
+	color: #999;
+}
+
+/* Item home first */
+
+.content-home-first {
+	border-width: 2px;
+
+	/* Html 5 */
+	-moz-box-shadow: 3px 3px 0px #EEE;
+	-webkit-box-shadow: 3px 3px 0px #EEE;
+	box-shadow: 3px 3px 0px #EEE;
+}
+
+
+
+/* Read-more button */
+.content-read-more { /* the tag is in 'content_lang.php' file. For this reason, the class name is not : '.content-item-read-more', but more generic */
+	display: block; /* because it's a <span> tag */
+	margin: 0;
+
+	float: right;
+	margin-right: 6%;
+
+	position: relative;
+	bottom: 8px;
+	margin-bottom: -12px;
+}
+
+
+
+/* mediasManager::mediaPreferenceButton() */
+.item-medias-pref-button {
+	float: right;
+}
+
+
+
+/*
+ * MODULES :
+ *		'/modules/mod_com_content_node.php'
+ *		'/modules/mod_com_content_latest.php'
+ */
+
+/* Customize each script by using thoses ID */
+#pane-node-content { /* <div id="pane-node-content" class="com-content-scroller"></div> */
+	height: 300px;
+	overflow: auto;
+}
+#pane-latest-content { /* <div id="pane-latest-content" class="com-content-scroller"></div> */
+	height: 300px;
+	overflow: auto;
+}
+
+.com-content-scroller {
+	font-size: 92%;
+}
+
+/* each cell */
+.com-content-scroller .scroll-item {
+	margin: 2px 1px  2px 0;
+	padding: 2px 3px;
+	background-color: #FCFCFC;
+	border: 1px solid #DDD;
+}
+.com-content-scroller .scroll-item:hover {
+	background-color: #F3F9FA;
+	border: 1px solid #B4D6E0;
+}
+
+/* image and the after-break */
+.com-content-scroller .scroll-item a.scroll-item-image { /* <a class="scroll-item-image"><img /></a> */
+	float: left;
+}
+.com-content-scroller .scroll-item a.scroll-item-image img {
+	margin: 1px 3px 3px 0;
+	border: 1px solid #FFF;
+}
+.com-content-scroller .scroll-item div.scroll-item-image { /* <div class="scroll-item-image"><div/> */
+	clear: left;
+}
+
+.com-content-scroller .scroll-item .scroll-item-content {
+	overflow: hidden;
+}
+.com-content-scroller .scroll-item .scroll-item-content strong { /* date_modified */
+	color: #555;
+	font-weight: normal;
+	font-family: Verdana;
+	font-style: italic;
+}
+.com-content-scroller .scroll-item .scroll-item-content a { /* title */
+	text-decoration: none;
+	display: block;
+	font-style: normal;
+	
+}
+.com-content-scroller .scroll-item .scroll-item-content a span { /* title_alias */
+	color: #999;
+}
+
+
+
+.item-share {
+	float: right;
+}
+
+
+
+.item-wcal-comment {
+	margin: 2em 0;
+}
+
+
+
+.content-dedicate-title {
+	padding-left: 15px;
+}
+
+
+
+.content-header-msg {
+	margin-top: 5px !important;
+}
+
+.content-header-msg .wcal-comment p {
+	margin-right: 10px !important;
+}
+
+.content-header-msg-icon {
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	width: 27px;
+	height: 34px;
+	background: url(images/header-msg.png);
+}
+
+
+
+ul.comContent-last li {
+	float: left;
+	margin-right: 10px;
+}
+
+br.comContent-last {
+	clear: left;
+}
+

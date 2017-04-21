@@ -1,0 +1,162 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/*
+ * alt_stat_view()
+ */
+
+.alt_stat_view {
+	margin: 10px 0;
+	padding: 0;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	font: 12px Arial;
+}
+
+.alt_stat_view th {
+	margin: 0;
+	padding: 5px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background-color: #DDD;
+	text-align: left;
+	font-weight: bold;
+	color: #444;
+}
+
+.alt_stat_view th.title {
+	background-color: #AAA;
+	text-align: right;
+	color: yellow;
+}
+
+.alt_stat_view td {
+	margin: 0;
+	padding: 5px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	color: #666;
+}
+
+.alt_stat_view td.value {
+	font: 12px Monospace;
+	color: #222;
+}
+
+
+
+/*
+ * debugManager class
+ */
+
+.debug-manager {
+	margin: 0;
+	padding: 0;
+	border-top: 2px solid #999;
+}
+
+#debug-manager-header {
+	border-top: 1px solid #111;
+	padding: 2px;
+	background-color: #333;
+	text-align: center;
+	font: bold 15px/22px Verdana;
+	color: #888;
+
+	/* HTML 5 */
+	text-shadow: 0 -1px 0 #DDD;
+}
+
+.debug-manager h3.debug-manager-title {
+	margin: 0;
+	padding: 2px 6px;
+	border-bottom: 1px solid #222;
+	background-color: #888;
+	font: bold 16px/24px Verdana;
+	color: #000;
+}
+
+.debug-manager h3.debug-manager-title span {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.debug-manager div.debug-manager-content {
+	margin: 0;
+	padding: 4px 8px 4px 20px;
+	background-color: #333;
+	font: normal 12px/20px Verdana;
+	text-align: left;
+	color: #00BFFF;
+}
+
+.debug-manager div.debug-manager-content span {
+	color: #AAA;
+}
+
+.debug-manager div.debug-manager-content span.key {
+	color: yellow;
+}
+
+.debug-manager div.debug-manager-content span.value {
+	color: red;
+}
+
+.debug-manager div.debug-manager-content span.key span,
+.debug-manager div.debug-manager-content span.value span {
+	font: normal 12px Verdana;
+	color: #AAA;
+}
+
+.debug-manager span.shift {
+	color: #777;
+}
+
+
+/*
+ * Secure image (captcha)
+ */
+
+.securimage-wrapper	{
+	margin-top: 1.5em;
+}
+
+.securimage-image {
+	float: left;
+	margin: 0 5px 10px 3px;
+	border: 1px solid #444;
+}
+
+.securimage-play {
+
+}
+
+.securimage-refresh {
+	display: none; /* will be shown by javascript */
+}
+
+.securimage-clear {
+	clear: left;
+}
+
+
+
+/*
+ * ie6 : the "no-more" message !
+ */
+
+#ie6-no-more {
+	position:absolute; z-index:99999; top:100px; left:50%;
+	width:510px; padding:15px; border:5px solid #CC0000; margin-left:-275px;
+	background-color:#FFF;
+	filter: 
+		progid:DXImageTransform.Microsoft.Shadow(color=#666666,direction=0,strength=10)
+		progid:DXImageTransform.Microsoft.Shadow(color=#666666,direction=90,strength=10)
+		progid:DXImageTransform.Microsoft.Shadow(color=#666666,direction=180,strength=10)
+		progid:DXImageTransform.Microsoft.Shadow(color=#666666,direction=270,strength=10);
+}
+#ie6-no-more-warning { float:left; margin:5px 15px 0px 0; }
+#ie6-no-more-downloads { text-align:center; }
+#ie6-no-more-downloads a { margin:0 20px; }
+#ie6-no-more-close { position:absolute; bottom:2px; right:2px; width:17px; height:17px; }
+

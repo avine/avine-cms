@@ -1,0 +1,66 @@
+
+/* Global */
+
+#jfontResizer {
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	line-height: 18px;
+}
+
+#jfontResizer a, 					/* none active selector */
+#jfontResizer a:link,
+#jfontResizer a:visited,
+#jfontResizer a:hover,
+#jfontResizer a:active,
+#jfontResizer a:focus,
+#jfontResizer a.jfontResizer { 		/* active selector */
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: transparent !important;
+	display: block;
+	width: 18px;
+	height: 18px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	outline: none;
+
+	/* Html 5 */
+	text-shadow: none !important;
+}
+
+#jfontResizer a#decreaseFont 	{ font-size: 10px; } /* fixed size */
+#jfontResizer a#resetFont 		{ font-size: 12px; } /* fixed size */
+#jfontResizer a#increaseFont 	{ font-size: 16px; } /* fixed size */
+
+
+
+/* Specific */
+
+#jfontResizer {
+	border: 1px solid #CCC;
+	border-right: none;
+	background: url(jfontResizer.gif) no-repeat right bottom #F6F6F6;
+}
+
+#jfontResizer a,
+#jfontResizer a:link,
+#jfontResizer a:visited {
+	border-right: 1px solid #CCC;
+	color: #B6B6B6;
+}
+
+#jfontResizer a:hover,
+#jfontResizer a:active,
+#jfontResizer a:focus {
+	color: #868686;
+}
+
+#jfontResizer a.jfontResizer {
+	background: url(jfontResizer.gif) no-repeat left top #FFF !important;
+	color: #767676;
+}

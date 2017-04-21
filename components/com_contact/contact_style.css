@@ -1,0 +1,19 @@
+
+.contact_preview {
+	margin-bottom: 5px;
+}
+
+#contact-fieldset {
+	width: 500px;
+}
+
+#message-preview {
+	padding-left: 12px;
+	border-left: 4px solid #E5E5E5;
+}
+
+
+.contact_link-to {
+	padding-left: 20px;
+	background: url(images/link-to.png) no-repeat left bottom;
+}

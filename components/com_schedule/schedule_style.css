@@ -1,0 +1,32 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+.schedule-table th,
+.schedule-table td {
+	text-align: center;
+}
+
+.schedule-table .schedule-table-first {
+	text-align: left;
+	background: url(images/schedule-first.gif) no-repeat right top #999;
+	color: #EEF3E0;
+	font-weight: bold;
+	width: 80px;
+}
+
+
+.schedule-module {
+	margin-bottom: 10px;
+}
+
+.schedule-module p {
+	margin-bottom: 3px;
+	font-size: 100%;
+	line-height: 115.38%;
+	color: #111;
+}
+
+.schedule-module p span {
+	font-size: 84.6%;
+	color: #696356;
+}

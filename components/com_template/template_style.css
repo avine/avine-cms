@@ -1,0 +1,14 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+#comTemplate-site-offline-flag {
+	position: absolute;
+	z-index: 99999;
+	left: 1px;
+	top: 1px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	font: bold 12px/12px Arial;
+	padding: 6px;
+}

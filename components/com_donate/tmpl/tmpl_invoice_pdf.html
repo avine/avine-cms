@@ -1,0 +1,187 @@
+<style type="text/css">
+<!--
+
+#body {
+	font-family: Helvetica;
+	color: black;
+	font-size: 10pt;
+}
+
+table.wrapper,
+td.wrapper {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-collapse: collapse;
+	vertical-align: top;
+}
+.border {
+	padding: 6pt 12pt;
+	border: 0.2mm solid grey;
+}
+
+table.content {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+table.content th,
+table.content td {
+	width: 100%;
+	padding: 6pt 12px;
+	border: 0.2mm solid grey;
+	vertical-align: middle;
+}
+table.content th {
+	padding: 3pt;
+	background-color: grey;
+	text-align: center;
+	color: white;	
+}
+.no-padding {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+p {
+	padding: 0;
+	margin: 0 0 10pt 0;
+}
+.no-margin {
+	margin: 0;
+}
+
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+.small {
+	font-size: 8pt;
+}
+.medium {
+	font-size: 18pt;
+}
+.large {
+	font-size: 25pt;
+}
+
+.grey {
+	color: grey;
+}
+
+-->
+</style>
+
+<page>
+<div id="body">
+
+<table class="wrapper" style="width:100%;">
+	<tr>
+		<td class="wrapper left" style="width:25%;">
+
+			<table class="wrapper center">
+				<tr>
+					<td class="wrapper small">
+						<img src="{site_url}/components/com_donate/images/logo-cerfa.jpg" alt="" /><br />
+						N° 11580*02</td></tr></table>
+
+		</td><td class="wrapper center medium" style="width:50%; line-height:20pt;">
+
+			<strong>REÇU<br />
+			Dons aux œuvres</strong><br />
+			<span class="small">Articles 200 et 238 bis du code général des impôts</span>
+
+		</td><td class="wrapper right" style="width:25%;">
+
+			<table class="content center">
+				<tr>
+					<td class="no-padding" style="line-height:14pt;">
+						<span class="small grey">Numéro d’ordre du reçu :</span><br />
+						<span class="medium">i{invoice}</span></td></tr></table>
+
+		</td>
+	</tr>
+</table>
+
+<br />
+
+<table class="content center">
+	<tr><th>Bénéficiaire des versements</th></tr>
+	<tr>
+		<td>
+			<p class="medium" style="line-height:25pt;">
+				<strong class="large">{recipient_name}</strong><br />
+				{recipient_adress}</p>
+			<p>
+				<span class="grey">Objet :</span> Association caritative. Soutien aux personnes en difficulté.</p>
+			<p class="small no-margin" style="line-height:12pt;">
+				Association cultuelle ou de bienfaisance autorisée à recevoir des dons et des legs<br />
+				par décision délivrée par le Préfet de Police. J.O. du 12 janvier 1994 - n° 2048</p>
+		</td>
+	</tr>
+</table>
+
+<br />
+
+<table class="content">
+	<tr><th>Donateur</th></tr>
+	<tr>
+		<td style="line-height:13pt;">
+			<strong>{donor_name}</strong><br />
+			{donor_adress}
+		</td>
+	</tr>
+</table>
+
+<br />
+
+<table class="wrapper" style="width:100%;">
+	<tr>
+		<td class="wrapper border" style="width:50%; line-height:12pt;">
+
+			<p>
+				<span class="small grey">Le bénéficiaire reconnaît avoir reçu au titre des versements<br />
+				ouvrant droit à réduction d’impôts, la somme de :</span><br />
+				<strong>{amount}</strong></p>
+
+			<p class="no-margin">
+				<span class="small grey">Somme en toutes lettres :</span><br />
+				<strong>{amount_in_words}</strong></p>
+
+		</td><td class="wrapper border" style="width:50%; line-height:12pt;">
+
+			<table class="wrapper" style="width:100%;">
+				<tr>
+					<td style="width:50%;">
+						<p>
+							<span class="small grey">Mode de versement :</span><br />
+							<strong>carte bancaire</strong></p>
+
+						<p class="no-margin">
+							<span class="small grey">Date et signature :</span><br />
+							<strong>{date}</strong></p>
+					</td>
+					<td class="right" style="width:50%;">
+						<br />
+						<img src="{site_url}/components/com_donate/images/signature.jpg" alt="" />
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+</div>
+</page>

@@ -1,0 +1,14 @@
+
+<div id="player{player_id}"><span class="medias-manager-loader">{mediaplayer_loading}</span></div>
+
+<script type="text/javascript" src="{mediaplayer_scripts_path}jwplayer.js"></script>
+<script type="text/javascript">
+	jwplayer("player{player_id}").setup({
+		flashplayer: "{mediaplayer_scripts_path}player.swf",
+		file: "{mediaplayer_src}",
+		image: "{mediaplayer_preview}",
+		width: {mediaplayer_width},
+		height: {mediaplayer_height},
+		controlbar: "bottom"
+	});
+</script>

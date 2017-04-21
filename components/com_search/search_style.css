@@ -1,0 +1,183 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+
+/*
+ * Results
+ */
+
+.comSearch_stats {
+	position: relative;
+}
+
+.comSearch_stats div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font: normal 10px Verdana;
+	color: #BBB;
+}
+
+.comSearch_result_revelance { /* In debug mode only */
+	font: 10px Verdana;
+	color: #333;
+}
+
+.comSearch_result_title {
+	/*font-size: 116.67%;*/
+}
+
+.comSearch_result_content {
+	
+}
+
+.comSearch_result_url {
+	font: 91.67% Verdana;
+	color: #AAA;
+}
+
+.comSearch_highlight {
+	border-bottom: 1px dotted;
+	font-weight: bold !important;
+	font-size: 108.33%;
+	/*background-color: #FFFACD;*/
+}
+
+.comSearch_no_result {
+	font-style: italic;
+	font-weight: bold;
+	color: #D0583F;
+}
+
+.comSearch_pagination a {
+	padding-right: 5px;
+}
+
+.comSearch_pagination span {
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+
+
+/*
+ * Form
+ */
+
+/* Remove styles */
+.comSearch_form .form-text,
+.comSearch_form .form-submit {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	background: url(images/search-blk.gif) !important;
+
+	/* Html 5 */
+	-moz-border-radius: 0; 
+	-webkit-border-radius: 0; 
+	border-radius: 0;
+
+	-moz-box-shadow: none;  
+	-webkit-box-shadow: none;  
+	box-shadow: none;
+}
+
+/* height reference */
+.comSearch_form,
+.comSearch_form .form-submit {
+	height: 25px;					/* $height */
+}
+
+.comSearch_form .form-text {
+	font-size: 15px;        		/* $size */
+	margin-top: 3px !important;		/* ($height - $size)/2 (= 5px; but adjusted at 3px;)  */
+	outline: none !important;
+}
+
+.comSearch_form .form-submit {
+	font-size: 14px;
+	color: #333 !important;
+}
+
+.comSearch_form {
+	overflow: hidden;
+	position: relative;
+
+	width: 300px;           		/* Text input width */
+	padding-right: 100px;   		/* $submit_width : Submit button width */
+
+	border: 1px solid #CCC;
+	background: url(images/search-string.gif) no-repeat 0 0 #FFF; /* Text input background */
+
+	/* Html 5 */
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+.comSearch_form .form-text {
+	position: absolute;
+	left: 0;
+	width: 290px;               	/* Text Input width minus left and right margins */
+	padding: 0 5px !important;  	/* Left and right margins */
+}
+
+.comSearch_form .form-submit {
+	background: url(images/search-submit.gif) no-repeat -30px center #F8F8F8 !important; /* Submit button background */
+}
+
+/* SHOW the input value */
+.comSearch_form .form-submit {
+    position: absolute;
+    width: 100px; /* $submit_width */
+    right: -0px;
+    text-align: center;
+}
+
+/* Add the 'hide-form-submit' class to HIDE the input value */
+.comSearch_form.hide-form-submit .form-submit {
+	width: 500px;               	/* $big_width */
+	right: -470px;              	/* $big_width - $submit_width */
+	text-align: right;
+}
+.comSearch_form.hide-form-submit {
+	padding-right: 30px;   			/* $submit_width : Submit button width */
+	
+}
+.comSearch_form.hide-form-submit .form-submit {
+	background-position: 0 center !important; /* Submit button background */
+}
+
+/* Add the 2 classes 'hide-form-submit tiny-form' to display "tiny" form */
+.comSearch_form.tiny-form,
+.comSearch_form.tiny-form .form-submit {
+	height: 18px;
+}
+.comSearch_form.tiny-form .form-text {
+	font-size: 12px;
+	margin-top: 0px !important; /* Perfect value : 3px; (but buggy in FF and IE) */
+}
+.comSearch_form.tiny-form {
+	width: 128px;
+	padding-right: 22px;
+}
+.comSearch_form.tiny-form .form-text {
+	width: 122px;               	/* Text Input width minus left and right margins */
+	padding: 0 3px !important;  	/* Left and right margins */
+}
+.comSearch_form.hide-form-submit.tiny-form .form-submit {
+	width: 500px;
+	right: -478px;
+	text-align: right;
+	background-image: url(images/search-submit-tiny.gif) !important;
+}
+.comSearch_form.hide-form-submit.tiny-form {
+	padding-right: 22px;
+	
+}
+
+
+/* Add/remove class when clear #search_mod_string on focus */
+.mod_search_clear {
+	color: #999 !important;
+}

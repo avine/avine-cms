@@ -1,0 +1,481 @@
+/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.fr). Dual licensed under the MIT and GPL Version 2 licenses. */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*
+ * Wrapper
+ */
+
+html,
+body {
+	height: 100%;
+	background: url(images/body-bg.gif) repeat-x top #A3B3BF;
+}
+
+#body-bottom {
+	padding-bottom: 10px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+#body-bottom a {
+	color: #575f66 !important;
+	text-decoration: none !important;
+	text-shadow: 0 1px 0 #ced4d9;
+}
+
+#wrapper {
+	width: 990px;
+	margin: 0 auto;
+	background: url(images/wrapper.gif) repeat-y center;
+}
+
+#wrapper-main {
+	background: url(images/wrapper-header.png) no-repeat top;
+	padding: 30px 15px 0 15px;
+}
+
+#wrapper-footer {
+	position: relative;
+	height: 31px; /* = 46 - 15 */
+	padding: 0 15px 15px 15px;
+	background: url(images/wrapper-footer.gif) no-repeat bottom;
+}
+
+
+
+#header {
+	position: relative;
+	overflow: hidden;
+	height: 90px;
+	margin-bottom: 1px;
+	/*height: 90px;*/
+}
+
+#navbar {
+	position: relative;
+
+	height: 2.1666em; /* Reach the height of #navbar ul */
+	border-bottom: 1px solid #70aedc;
+	background: url(images/mainmenu-bg.gif) repeat-x center center #2C79B3;
+}
+
+#main {
+	background: url(images/main.gif) repeat-y right #FFF;
+	width: 100%; /* Added after that a strange bug discovered in IE (but this is completly useless for FF) */
+	clear: both; /* In case the menu inside the #navbar tags is using a float rule */
+}
+
+#main-clear {
+	clear: right;
+}
+
+#column-right {
+	position: relative;
+	z-index: 3;
+	float: right;
+	width: 200px;
+}
+
+#main2 {
+	position: relative;
+	background-color: #FFF;
+	overflow: hidden;
+	zoom: 1; /* For ie */
+}
+
+
+
+#slideshow { /* To display properly the slideshow : right column is required ; left column is forbidden. */
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	height: 211px;
+	background: url(images/slideshow.gif) no-repeat right bottom;
+	margin-bottom: -28px; /* This allow the top of .module-left-title to reach the bottom of #slideshow (but have a little bug with the top of #main-content wich touch the slideshow tool) */
+}
+
+#column-left {
+	position: relative;
+	z-index: 3;
+	float: left;
+	width: 180px;
+}
+
+#main3 {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	zoom: 1; /* For ie */
+}
+
+#main-content {
+	position: relative;
+	z-index: 1;
+	padding: 15px;
+}
+
+#main-content-clear {
+	clear: both;
+}
+
+
+
+/*
+ * Logo
+ */
+
+#header div#logo a {
+	display: block;
+	width: 250px;
+	height: 89px;
+	margin-left: 5px;
+}
+
+
+
+/*
+ * Pathway
+ */
+
+#pathway {
+	position: relative;
+	height: 16px;
+	padding: 5px;
+	padding-bottom: 0; /* there's already the #main-content padding */
+	color: #BBB;
+	font-size: 116.66%;
+	line-height: 16px;
+}
+
+#pathway a,
+#pathway a:link,
+#pathway a:visited {
+	margin: 0 2px;
+	text-decoration: none;
+	font-size: 78.57%;
+	color: #999;
+}
+
+#pathway a:hover,
+#pathway a:active,
+#pathway a:focus {
+	color: #2C79B3;
+}
+
+#pathway #home-link {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(images/pathway-home.gif) no-repeat 0 0;
+	text-indent: 16px;
+	overflow: hidden;
+	margin: 0 6px 0 0;
+}
+
+
+
+/* 
+ * Header menu
+ */
+
+#navbar ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	overflow: hidden;
+	zoom: 1; /* For ie6 */
+
+	/* Useless : has been moved to #navbar */
+	/*border-bottom: 1px solid #70aedc;
+	background: url(images/mainmenu-bg.gif) repeat-x center center #2C79B3;*/
+
+	font-weight: bold;
+	font-size: 108.33%; /* 13px */
+	line-height: 192.31%; /* 25px */
+}
+
+#navbar ul.menu li {
+	margin: 0;
+	padding: 0;
+	background: url(images/blank.gif) no-repeat 0 0;
+
+	display: inline;
+}
+
+#navbar ul.menu li a,
+#navbar ul.menu li a:link,
+#navbar ul.menu li a:visited {
+	padding: 26px 16px 26px 8px;	/* top and bottom should reach out the ul tag */
+	border-right: 1px solid #255E83;
+	border-left: 1px solid #3F86BA;
+
+	background: url(images/mainmenu.gif) no-repeat right center;
+	color: #C3DBED;
+	text-decoration: none;
+
+	/* Html 5 */
+	text-shadow: 0 1px 0 #295678;
+}
+
+#navbar ul.menu li a:hover,
+#navbar ul.menu li a:active,
+#navbar ul.menu li a:focus,
+#navbar ul.menu li a.active {
+	background: url(images/mainmenu-hover.gif) no-repeat left center;
+	color: #FAFAFA;
+	text-decoration: none;
+
+	/* Html 5 */
+	text-shadow: none;
+}
+
+#navbar ul.menu ul {
+	display: none; /* Basic menu with no sub-level */
+}
+
+
+
+/*
+ * Search
+ */
+
+#search {
+	float: right;
+	margin: 5px 5px 0 0;
+	position: relative;
+}
+
+/* Border version (Je crois que ce pavet ne ser plus à rien !!!) */
+#search #search-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 3px 26px 3px 6px;
+	width: 98px;
+	border: 1px solid #CCC;
+	color: #888;
+}
+/* Background-image version (buggy with IE)
+#search #search-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 4px 27px 4px 7px;
+	width: 98px;
+	height: 15px;
+	line-height: 15px;
+	border: none;
+	background: url(images/search-bg.gif) no-repeat center center #FFF;
+	color: #888;
+	zoom: 1;
+} */
+
+#search #search-submit {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	z-index: 2;
+	height: 18px;
+	width: 22px;
+	text-indent: 22px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: url(images/search.gif) no-repeat center center #FFF;
+} /* Jusqu'ici. */
+
+
+
+/*
+ * Right module
+ */
+
+.module-right {
+	margin-bottom: 20px;
+	width: 200px; /* For ie6 */
+	overflow: hidden;
+}
+
+.module-right-title-green,
+.module-right-title-blue {
+	margin: 0 0 4px 0;
+	padding: 3px 4px 10px 8px;
+	border: none;
+	border-top: 1px solid #AEB3B8;
+	background: url(images/module-right-title-green.gif) no-repeat left bottom #B9C98B;
+
+	line-height: 114.29%; /* 16px */
+	font-size: 116.67%; /* 14px */
+	color: #FFF;
+
+	font-variant: small-caps;
+	letter-spacing: 0.0625em;
+	word-spacing: -0.0625em;
+}
+
+.module-right-title-green {
+	background: url(images/module-right-title-green.gif) no-repeat left bottom #B9C98B;
+}
+
+.module-right-title-blue {
+	background: url(images/module-right-title-blue.gif) no-repeat left bottom #A1C7E3;
+}
+
+.module-right-content {
+	margin: 0 8px;
+}
+
+
+
+/*
+ * Left module
+ */
+
+.module-left {
+	margin-bottom: 0px;
+	border-bottom: 1px solid #FFF;
+	/*background: url(images/module-left.gif) repeat-x left bottom;*/
+	width: 180px; /* For ie6 */
+	overflow: hidden;
+}
+
+.module-left-title {
+	margin: 0;
+	padding: 7px 0 5px 10px;
+	background: url(images/module-left-title.png) no-repeat left top;
+	border: none;
+
+	font-style: normal;
+	line-height: 113.33%; /* 17px */
+	font-size: 125%; /* 15px */
+	color: #87A140;
+}
+
+.module-left-top {
+	margin-bottom: -3px; /* Adjust the distance betwwen the title and the content (*) */
+	height: 1px;
+	background: url(images/module-left-title.png) no-repeat left top;
+	overflow: hidden; /* For ie6 */
+}
+
+.module-left-content {
+	margin-left: 10px;
+	margin-top: 9px; /* Same as padding-top of .module-left-title */
+}
+
+
+
+/*
+ * Left module menu
+ */
+
+.module-left-content ul {
+	margin: 0 0 15px -10px;
+	list-style: none;
+	font-size: 100%; /* 12px */
+	line-height: 125%; /* 15px */
+
+	position: relative;
+	top: -6px; /* Remove the distance betwwen the title and the content */
+}
+
+.module-left-content ul li {
+	margin: 0;	
+	padding-left: 0;
+	background: url(images/blank.gif) no-repeat 0 0;
+}
+
+.module-left-content ul li a,
+.module-left-content ul li a:link,
+.module-left-content ul li a:visited {
+	display: block;
+	padding: 9px 0 9px 10px;
+	background: url(images/left-menu-bg.gif) no-repeat right bottom;
+	text-decoration: none;
+	color: #555;
+}
+
+.module-left-content ul li a:hover,
+.module-left-content ul li a:active,
+.module-left-content ul li a:focus {
+	background: url(images/left-menu-hover-bg.gif) no-repeat right bottom #F7F7F7;
+	text-decoration: none;
+	color: #2C79B3;
+}
+
+.module-left-content ul li a.active,
+.module-left-content ul li a.active:link,
+.module-left-content ul li a.active:visited {
+	font-weight: bold;
+	color: #2C79B3;
+	background-color: #FFF;
+}
+
+
+
+/* Right column customization */
+
+.module-right-content ul li {
+	background: url(images/list-bullet-blue.gif) no-repeat 0em 0.4em;
+	padding-left: 1.3334em;
+}
+
+.module-right-content ol {
+	background-position: 0em 0.4em;
+	padding-left: 1.3334em;
+}
+
+
+
+/*
+ * Footer content
+ */
+
+#wrapper-footer {
+	color: #EEE;
+	font-size: 91.67%;
+	line-height: 30px; /* Fixed ! */
+	text-align: center;
+}
+
+#wrapper-footer a,
+#wrapper-footer a:link,
+#wrapper-footer a:visited {
+	color: #DDD;
+	text-decoration: none;
+}
+
+#wrapper-footer a:hover,
+#wrapper-footer a:active,
+#wrapper-footer a:focus  {
+  color: #FFF;
+}
+
+
+
+/* DIV separator */
+.div-sep {
+	margin: 		0 		!important;
+	padding: 		0 		!important;
+	border: 		none 	!important;
+	background: 	none 	!important;
+	height: 		1px 	!important;
+	line-height: 	1px 	!important;
+	font-size: 		1px 	!important;
+}
+
+

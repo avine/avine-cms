@@ -1,0 +1,318 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/**
+ * Default view for: /components/com_user/user_class.php
+ */
+
+.comUser_fieldset {
+	width: 480px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+}
+.comUser_fieldset .center {
+	text-align: center;
+}
+
+
+/* comUser_form */
+table.comUser_form {
+	border: none;
+	margin: auto;
+}
+table.comUser_form th {
+	font-weight: normal;
+	text-align: right;
+	width: 200px;
+}
+table.comUser_form td {
+	font-weight: normal;
+	text-align: left;
+	width: 250px;
+}
+table.comUser_form th.center,
+table.comUser_form td.center {
+	font-weight: normal;
+	text-align: center;
+}
+
+.comUser_form-submit {
+	text-align: center !important;
+}
+.comUser_form-tips {
+	text-align: right !important;
+	color: #D0583F; /* color of the star for required fields */
+}
+.comUser_form-error .box-warning,
+.comUser_form-error .box-error {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* Create success : law */
+.comUser_create-law {
+	margin: 1.5em 0;
+	padding: 4px 8px;
+	border-radius: 4px;
+	border-top: 	1px solid #EEE;
+	border-right: 	1px solid #CCC;
+	border-bottom: 	1px solid #CCC;
+	border-left: 	1px solid #EEE;
+	background-color: #F9F9F9;
+	text-align: justify;
+	font-size: 91.66%;
+}
+
+
+
+.comUser_activate-email {
+	background: url(images/activate-email.png) no-repeat left center;
+	padding-left: 56px;
+	color: #D0583F;
+}
+.comUser_activate-success {
+	background: url(images/activate-success.png) no-repeat left center;
+	padding-left: 56px;
+	color: #559726;
+}
+
+
+
+/* comUser_login */
+.comUser_login-links {
+	margin: 10px 4px !important;
+	font-size: 91.67% !important;
+	line-height: 136.4% !important;
+	text-align: left !important;
+	color: #888;
+}
+.comUser_login-links a {
+	
+}
+
+.comUser_login-remember {
+
+}
+
+.comUser_login-submit {
+
+}
+
+.comUser_login-error {			/* error wrapper */
+	margin: 0;
+	position: relative;
+	height: 15px;
+	vertical-align: middle;
+	text-align: center !important;
+	font-style: italic !important;
+	font-weight: bold !important;
+	color: #D0583F; 									/* Whithout background */
+}
+.comUser_login-error span {		/* error message */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15px;
+	line-height: 15px;
+	padding: 0 4px !important;
+	/*color: #FFF; background-color: #D0583F;			/* With background */
+}
+
+.comUser_logout {
+	text-align: center;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.comUser_logout-hello {
+	/*font: 11px Verdana, Arial, Helvetica, sans-serif !important;
+	color: #2C79B3;*/
+}
+
+
+
+/* comUser_view */
+table.comUser_view {
+	margin-bottom: 15px;
+	border: 1px dotted #CCC;
+	padding: 15px;
+	background: url(images/com-user-bg.gif) no-repeat 1px 1px #FFF;
+}
+table.comUser_view th {
+	color: #2C79B3;
+	text-align: right;
+	padding: 4px 16px 4px 8px;
+	border-bottom: 1px dotted #CCC;
+}
+table.comUser_view td {
+	text-align: left;
+	padding: 4px 8px;
+	border-bottom: 1px dotted #CCC;
+}
+
+p.comUser_view-user-access {
+	
+}
+p.comUser_view-user-access span {
+	color: #888;
+}
+
+
+
+/* comUser_forget */
+.comUser_forget-tips {
+	text-align:center;
+}
+
+
+
+/* comUser_login-module */
+.comUser_login-module p,
+.comUser_login-module div {
+	line-height: 100%;
+	margin: 0 0 2px 0;
+}
+.comUser_login-module .form-text {
+	width: 150px; /* Control the inputs width */	
+}
+.comUser_login-module .comUser_login-remember {
+	margin: 0 !important;
+}
+.comUser_login-module .comUser_login-submit {
+	margin: 0 !important;
+}
+
+.comUser_logout-module {
+	text-align: left;
+	padding: 0 4px;
+}
+.comUser_logout-module input {
+	margin-left: 0 !important;
+}
+
+.comUser_login-module .comUser_login-error {
+	text-align: left !important;
+}
+
+
+
+/**
+ * Styles for the templates: 'default/tmpl_1_x.html'
+ */
+
+.comUser_1_login fieldset,
+.comUser_1_create fieldset {
+	width: 500px;
+}
+
+.comUser_1_login table {
+	width: 1%;
+	margin: 0;
+}
+.comUser_1_login table tr {
+	margin: 0;
+	padding: 0;
+}
+.comUser_1_login table th,
+.comUser_1_login table td {
+	margin: 0;
+	padding: 1px;
+	text-align: left;
+}
+.comUser_1_login .center {
+	text-align: center !important;
+}
+
+td.comUser_1_login {		/* submit button */
+	vertical-align: bottom;
+}
+
+th.comUser_1_login {		/* error message */
+	vertical-align: bottom;
+}
+th.comUser_1_login div {
+	height: 30px;
+	line-height: 30px;
+	color: #E54F6D;
+}
+
+.comUser_1_create label {
+	float: left;
+	width: 150px;
+	text-align: right !important;	
+}
+
+.comUser_1_create input,
+.comUser_1_create select {
+	float: left;
+}
+
+.comUser_1_create br,
+.comUser_1_create p {
+	clear: left;
+}
+
+.comUser_1_create label,
+.comUser_1_create img { /* the required star image */
+	position: relative;
+	top: 3px;
+}
+
+.comUser_1_create_captcha {
+	border-left: 5px solid #ddd;
+	padding-left: 15px;
+
+	margin-bottom: 1.5em;	/* Add margin-bottom */
+}
+.comUser_1_create_captcha .securimage-wrapper {
+	margin-top: 0;			/* Remove the default margin-top */
+}
+
+.comUser_1_view h3 {
+	margin-bottom: 0;
+}
+
+.comUser_1_view span {
+	color: #888;
+}
+
+.comUser_1_view h3.identity {
+	background: url(images/identity.png) no-repeat 0 0;
+	padding-left: 22px;
+}
+
+.comUser_1_view h3.adress {
+	background: url(images/adress.png) no-repeat 0 0;
+	padding-left: 22px;
+}
+
+.comUser_1_view h3.telephone {
+	background: url(images/telephone.png) no-repeat 0 0;
+	padding-left: 22px;
+}
+
+.comUser_1_view h3.extra-field {
+	background: url(images/extra-field.png) no-repeat 0 0;
+	padding-left: 22px;
+}
+
+.comUser_1_view h3.status {
+	background: url(images/status.png) no-repeat 0 0;
+	padding-left: 22px;
+}
+
+
+
+/* The module : mod_user_session_counter.php */
+.comUser_session-counter {
+	
+}
+.comUser_session-counter strong {
+	
+}

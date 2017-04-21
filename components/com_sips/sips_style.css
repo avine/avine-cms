@@ -1,0 +1,90 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+
+/* Choose between : (1) Simple "left" alignment */
+
+#comSips_request-amount {
+	font-size: 135%;
+}
+
+#comSips_request-amount span {
+	font-weight: bold;
+}
+
+#comSips_request-amount span.comSips_currency {
+	font-weight: normal;
+	padding-left: 5px;
+} /* end */
+
+
+
+
+/* and : (2) "Center" alignment and box wrapper */
+
+#comSips_request-amount {
+	text-align: center;
+	margin: 0;
+}
+
+#comSips_request-amount {
+	font-size: 135%;
+	margin-bottom: 30px;
+}
+
+#comSips_request-amount span {
+	font-weight: bold;
+}
+
+#comSips_request-amount span.comSips_currency {
+	font-weight: normal;
+	padding-left: 5px;
+}
+
+#comSips_request {
+	text-align: center;
+	width: 350px;
+	margin: 30px auto;
+	padding-top: 25px;
+	background: url(images/request-bg.gif) no-repeat top left #FFF;
+}
+.comSips_request {
+	height: 25px;
+	background: url(images/request-bg.gif) no-repeat bottom left #FFF;
+}
+
+#comSips_request div {
+	width: 350px;
+	text-align: center;
+} /* end */
+
+
+
+#comSips_ip-addr {
+	margin-top: 50px;
+	font: normal 10px Verdana;
+	text-align: center;
+}
+
+#comSips_ip-addr span {
+	border: 1px solid #EAEAEA;
+	background-color: #FAFAFA;
+	color: #888;
+	padding: 4px 8px;
+}
+
+#comSips_ip-addr span span {
+	color: #555;
+	border: none !important;
+	padding: 0 !important;
+}
+
+
+
+#comSips_debug {
+	margin: 15px 0;
+	padding: 5px;
+	font: normal 11px/18px Monospace;
+	color: #8B0000;
+	border: 1px solid #8B0000;
+	background-color: #FFF0F0;
+}

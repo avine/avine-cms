@@ -1,0 +1,28 @@
+
+/* Auto-appear link */
+#topcontrol{
+	/*display: none; /* Disable this feature */
+	position: relative;
+	z-index: 9999;
+	width: 32px;
+	height: 32px;
+	background: url(images/scrolltopcontrol.png) no-repeat 0 0;
+}
+
+/* Permanent link */
+#toplink {
+	position: absolute;
+	top: -7px;
+	right: 12px;
+
+	padding: 0 15px 0 0;
+	background: url(images/scrolltoplink.gif) no-repeat right center;
+	font-family: Verdana;
+	font-size: 9px;
+	font-weight: normal;
+	text-decoration: none !important;
+	color: #303030 !important;
+
+	/* Html 5 */
+	text-shadow: 1px 1px 0 #AAA;
+}

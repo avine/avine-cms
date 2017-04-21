@@ -1,0 +1,298 @@
+/* Copyright (C) 2008. All Rights Reserved. @license - Copyrighted Software. Author: Stéphane Francel */
+
+   
+* {
+	margin:0;
+	padding:0;
+}
+
+
+
+/*
+ * Wrapper
+ */
+
+body {
+	background: url(images/body-bg.gif) repeat 0 0 #A3B3BF;
+	/*background-attachment: fixed;*/ /* It's smart, but slow in FF ! */
+	font: 12px/18px Arial;
+	color: #333;
+}
+
+#wrapper {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid #6C7780;
+	border-top: none;
+	background-color: #FFF;
+
+	/* Html 5 */
+	-moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	border-radius: 7px;
+
+	/* Html 5 */
+	-moz-box-shadow: 0 0 10px #626b73;  
+	-webkit-box-shadow: 0 0 10px #626b73;  
+	box-shadow: 0 0 10px #626b73;
+}
+
+#header {
+	position: relative;
+	height: 60px;
+	background: url(images/header.gif) repeat-x top #F8F8F8;
+	border-bottom: 1px solid #6C7780;
+}
+
+#main {
+	margin: 20px;
+}
+
+#footer {
+	display: none;
+}
+
+#bottom {
+	text-align: center;
+	padding: 5px 0 30px 0;
+	color: #5E7077;
+	font-weight: bold;
+
+	/* Html 5 */
+	text-shadow: 0 1px 0 #e6edf2;
+}
+
+
+/*
+ * Logo
+ */
+
+#header div#site-name {
+	margin: 0;
+	padding: 0;
+	height: 59px;
+}
+
+#header div#site-name a {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 0;
+	height: 58px;
+	padding-left: 220px;
+	overflow: hidden;
+	background: url(images/installation.jpg) no-repeat top left transparent;
+}
+
+#header div#logo {
+	position: absolute;
+	width: 72px;
+	height: 72px;
+	right: 16px;
+	top: 9px;
+	background: url(images/logo.png) no-repeat 0 0;
+}
+
+
+
+/*
+ * Font
+ */
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #2C79B3;
+	outline: none;
+}
+a:hover,
+a:active,
+a:focus {
+	text-decoration: underline;
+}
+
+
+
+h1 {
+	margin: 5px 0 12px 0px;
+	font-size: 150%;
+	color: #2C79B3;
+}
+
+h2 {
+	margin: 0px 0 20px 0;
+	font-size: 125%;
+	color: #9DBA4F;
+}
+
+h3 {
+	margin: 3px 0 3px 0;
+	color: #9DBA4F;
+	line-height: 100%;
+	font-size: 116.67%;
+	font-weight: normal;
+}
+
+h1 span,
+h2 span {
+	font-weight: normal;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+img {
+	border: none;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #F8F8F8;
+	margin: 15px 0;
+}
+
+
+
+fieldset {
+	display: block;
+	border: 1px solid #CCC;
+	padding: 15px;
+	margin: 5px 0 15px 0;
+	background: url(images/fieldset-bg.gif) repeat-x bottom #FFF;
+
+	/* Html 5 */
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+legend {
+	margin-left: 19px;
+	padding: 0 6px;
+	color: #777;
+	font-size: 100%;
+	font-style: normal;
+	letter-spacing: 0.125em;
+	background-color: #FFF;
+	border: none;
+	font-variant: small-caps;
+}
+
+
+
+ol {
+	
+}
+
+li {
+	margin: 10px 0;
+	list-style: decimal outside;
+}
+
+
+
+/*
+ * Special
+ */
+
+legend.config {
+	background: url(images/fieldset_config.png) no-repeat 6px 3px #FFF;
+	padding-left: 29px;
+}
+
+legend.database {
+	background: url(images/fieldset_database.png) no-repeat 6px 3px #FFF;
+	padding-left: 29px;
+}
+
+legend.default {
+	background: url(images/fieldset_default.png) no-repeat 6px 3px #FFF;
+	padding-left: 29px;
+}
+
+
+
+.db-install {
+	padding-left: 48px;
+	background: url(images/db_install.png) no-repeat 0 4px;
+}
+
+.db-uninstall {
+	padding-left: 48px;
+	background: url(images/db_uninstall.png) no-repeat 0 4px;
+}
+
+.db-install span,
+.db-uninstall span {
+	color: #333;
+}
+
+
+
+.navig {
+	margin: 40px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.navig a,
+.navig a:link,
+.navig a:visited {
+	text-decoration: none;
+	color: #FFF;
+	outline: none;
+	padding: 4px 12px;
+	background-color: #86a6bf;
+
+	/* Html 5 */
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+
+	/* Html 5 */
+	text-shadow: 1px 1px 0 #333;
+}
+.navig a:hover,
+.navig a:active,
+.navig a:focus {
+	text-decoration: none;
+	background-color: #2C79B3;
+}
+
+
+
+#bottom a,
+#bottom a:link,
+#bottom a:visited {
+	color: #505F65;
+}
+#bottom a:hover,
+#bottom a:active,
+#bottom a:focus {
+	color: #384347;
+	text-decoration: none;
+}
+
+
+
+/*
+ * Check/uncheck button
+ */
+
+#checked_status {
+	display: none;
+}
+
+.checked_status {
+	width: 16px;
+	height: 16px;
+	background: url(images/checked_status.png) no-repeat 0 0;
+	text-indent: 16px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
