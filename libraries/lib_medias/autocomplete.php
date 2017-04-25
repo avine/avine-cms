@@ -1,5 +1,5 @@
 <?php
-/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.fr). Dual licensed under the MIT and GPL Version 2 licenses. */
+/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.io). Dual licensed under the MIT and GPL Version 2 licenses. */
 
 //////////
 // CONFIG

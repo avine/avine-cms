@@ -10,7 +10,7 @@ defined( '_DIRECT_ACCESS' ) or die( 'Restricted access' );
 // Language
 
 define('LANG_INSTALL_PAGE_TITLE'					, 'Installation');
-define('LANG_INSTALL_COPYRIGHT'						, '&copy; <a href="http://avine.fr/">avine.fr</a>');
+define('LANG_INSTALL_COPYRIGHT'						, '&copy; <a href="http://avine.io/">avine.io</a>');
 
 
 

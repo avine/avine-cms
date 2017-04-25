@@ -7,7 +7,7 @@ defined( '_DIRECT_ACCESS' ) or die( 'Restricted access' );
 
 
 define( 'LANG_ADMIN_TITLE'									, "Administration");
-define( 'LANG_ADMIN_COPYRIGHT'								, '&copy; <a href="http://avine.fr/" title="http://avine.fr">avine.fr</a>');
+define( 'LANG_ADMIN_COPYRIGHT'								, '&copy; <a href="http://avine.io/" title="http://avine.io">avine.io</a>');
 
 
 define( 'LANG_ADMIN_ADMIN_MENU_CONFIG_ERROR_WITH_ADMIN_MENU_TABLE', 

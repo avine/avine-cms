@@ -52,7 +52,7 @@ switch($_GET['alias'])
 
 <?php echo $message; ?>
 
-<p>&copy; avine.fr</p>
+<p>&copy; avine.io</p>
 
 </body>
 </html>

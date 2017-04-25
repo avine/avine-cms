@@ -1,5 +1,5 @@
 <?php
-/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.fr). Dual licensed under the MIT and GPL Version 2 licenses. */
+/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.io). Dual licensed under the MIT and GPL Version 2 licenses. */
 
 
 // No direct access
@@ -155,7 +155,7 @@ $load->setBase($g_page['template_dir'])->resources(
 
 </div><!-- /wrapper -->
 
-<div id="body-bottom"><a href="http://avine.fr/">2012-<?php copyrightDate() ?> &copy; avine.fr</a></div>
+<div id="body-bottom"><a href="http://avine.io/">2012-<?php copyrightDate() ?> &copy; avine.io</a></div>
 
 <?php ie6_no_more() ?>
 <?php new debugManager($g_page['debug']) ?>

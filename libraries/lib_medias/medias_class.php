@@ -1,5 +1,5 @@
 <?php
-/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.fr). Dual licensed under the MIT and GPL Version 2 licenses. */
+/* Avine. Copyright (c) 2008 Stéphane Francel (http://avine.io). Dual licensed under the MIT and GPL Version 2 licenses. */
 
 
 // No direct access
@@ -17,7 +17,7 @@ abstract class mediasManager_abstract
 
 	protected	$add_download_link		= true;			# Add a download button to the media source (boolean)
 	protected	$download_link_img		= '/libraries/lib_medias/images/download-link_32.png'; # Path to the download image
-	const		DOWNLOAD_QUERY_STRING	= 'filepath';	# Example: http://avine.fr/download.php?filepath=/resource/image/sample.jpg
+	const		DOWNLOAD_QUERY_STRING	= 'filepath';	# Example: http://avine.io/download.php?filepath=/resource/image/sample.jpg
 
 	protected	$autocomplete	= true;					# Use autocompletion in the method formInputs()
 
